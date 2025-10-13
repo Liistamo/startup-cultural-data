@@ -1,0 +1,54 @@
+# --- Python: bytecode & caches ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.ipynb_checkpoints/
+
+# --- Virtual environments / tools ---
+venv/
+.venv/
+.env
+.env.*
+.envrc
+.direnv/
+.python-version
+pip-wheel-metadata/
+.eggs/
+*.egg-info/
+
+# --- Build / temp / logs ---
+dist/
+build/
+*.log
+logs/
+tmp/
+*.tmp
+
+# --- Editors / OS ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# --- (Optional) DuckDB binaries if you don't version them ---
+# Remove these lines if you want to commit the binary.
+duckdb
+duckdb.exe
+duckdb.dylib
+duckdb.so
+
+# --- Certificates / keys (do not commit) ---
+*.key
+*.pem
+*.crt
+
+# NOTE: cleaned_data/ and geojson/ are tracked in Git (no ignore needed)
+
+# Cache from official sources (too large for GitHub)
+geojson/lau/*.geojson
+!geojson/lau/README.txt

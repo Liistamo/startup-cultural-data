@@ -1,0 +1,2384 @@
+{
+  "Säbyhallsvägen 30, Stockholm": {
+    "lat": 59.2021815,
+    "lon": 17.7683573,
+    "status": "ok",
+    "display_name": "Säbyhallsvägen, Salem Centrum, Salem, Salems kommun, Stockholms län, 144 30, Sverige"
+  },
+  "Gustavslundsvägen 26, Stockholm": {
+    "lat": 59.3328103,
+    "lon": 17.9821701,
+    "status": "ok",
+    "display_name": "Bastard Burgers, 26, Gustavslundsvägen, Alvik, Bromma stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 167 51, Sverige"
+  },
+  "Hägerstensvägen 133": {
+    "lat": 59.3067815,
+    "lon": 18.0197291,
+    "status": "ok",
+    "display_name": "Hägerstensvägen, Nybohov, Liljeholmen, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 117 63, Sverige"
+  },
+  "Lagaplan 6, Stockholm": {
+    "lat": 59.2772904,
+    "lon": 18.1330737,
+    "status": "ok",
+    "display_name": "Bagarmossens kyrka, 6, Lagaplan, Bagarmossen, Skarpnäcks stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 128 45, Sverige"
+  },
+  "Björkhagsplan 6, Stockholm": {
+    "lat": 59.2910762,
+    "lon": 18.1166967,
+    "status": "ok",
+    "display_name": "Björkhagsplan, Björkhagen, Skarpnäcks stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 121 52, Sverige"
+  },
+  "Blackebergsplan 5, Stockholm": {
+    "lat": 59.3477785,
+    "lon": 17.8831336,
+    "status": "ok",
+    "display_name": "Salong Klippnytt, 5, Blackebergsplan, Blackebergs centrum, Blackeberg, Bromma stadsdelsområde, Stockholms kommun, Stockholms län, 168 48, Sverige"
+  },
+  "Bredängstorget 20, Stockholm": {
+    "lat": 59.2946414,
+    "lon": 17.9340005,
+    "status": "ok",
+    "display_name": "Bredängs bibliotek, 20, Bredängstorget, Bredäng, Skärholmens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 127 32, Sverige"
+  },
+  "Klädesvägen 12, Stockholm": {
+    "lat": 59.3385721,
+    "lon": 17.9394968,
+    "status": "ok",
+    "display_name": "Coop Brommaplan, 12, Klädesvägen, Bromma, Bromma stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 168 76, Sverige"
+  },
+  "Dalens allé 10, Stockholm": {
+    "lat": 59.2852323,
+    "lon": 18.0941551,
+    "status": "ok",
+    "display_name": "Sandsborgsbadet, 10, Dalens allé, Dalen Centrum, Gamla Enskede, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 121 31, Sverige"
+  },
+  "Farstagången 8": {
+    "lat": 59.2426516,
+    "lon": 18.0897818,
+    "status": "ok",
+    "display_name": "Kulturskolan, 8, Farstagången, Farsta centrum, Farsta, Farsta stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 123 33, Sverige"
+  },
+  "Fruängsgången 1, Stockholm": {
+    "lat": 59.285614,
+    "lon": 17.9635524,
+    "status": "ok",
+    "display_name": "Fruängsgången, Fruängen, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 129 52, Sverige"
+  },
+  "Gröndalsvägen 36, Stockholm": {
+    "lat": 59.3160868,
+    "lon": 18.0119397,
+    "status": "ok",
+    "display_name": "36, Gröndalsvägen, Gröndal, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 117 67, Sverige"
+  },
+  "Gubbängstorget 108, Stockholm": {
+    "lat": 59.2628191,
+    "lon": 18.084156,
+    "status": "ok",
+    "display_name": "Gubbängstorget, Gubbängen, Farsta stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, Sverige"
+  },
+  "Hagsätra torg 32, Stockholm": {
+    "lat": 59.2619518,
+    "lon": 18.0144566,
+    "status": "ok",
+    "display_name": "Kamuchas, 32, Hagsätra Torg, Hagsätra, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 124 73, Sverige"
+  },
+  "Sveavägen 73, Stockholm": {
+    "lat": 59.3434409,
+    "lon": 18.0551499,
+    "status": "ok",
+    "display_name": "73, Sveavägen, Sibirien, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 50, Sverige"
+  },
+  "Hässelby Torg 10": {
+    "lat": 59.3676299,
+    "lon": 17.8437218,
+    "status": "ok",
+    "display_name": "Hässelby gårds bibliotek, 10, Hässelby Torg, Hässelby gård, Hässelby-Vällingby stadsdelsområde, Stockholms kommun, Stockholms län, 165 55, Sverige"
+  },
+  "Lövkojsgränd 12, Stockholm": {
+    "lat": 59.3802396,
+    "lon": 17.8150408,
+    "status": "ok",
+    "display_name": "Lövkojsgränd, Hässelby Villastad, Hässelby-Vällingby stadsdelsområde, Stockholms kommun, Stockholms län, 165 74, Sverige"
+  },
+  "Högdalsgången 10, Stockholm": {
+    "lat": 59.2633614,
+    "lon": 18.0429868,
+    "status": "ok",
+    "display_name": "Kaffein, 10, Högdalsgången, Högdalen, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 124 54, Sverige"
+  },
+  "Sankt Eriksgatan 33, Stockholm": {
+    "lat": 59.3328913,
+    "lon": 18.0313443,
+    "status": "ok",
+    "display_name": "33, Sankt Eriksgatan, Kungsholmen, Kungsholmens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 112 42, Sverige"
+  },
+  "Kista Galleria, Stockholm": {
+    "lat": 59.403178,
+    "lon": 17.9442909,
+    "status": "ok",
+    "display_name": "Kista Galleria, 55F, Hanstavägen, Kista, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 164 53, Sverige"
+  },
+  "Ljusslingan 26, Stockholm": {
+    "lat": 59.3060016,
+    "lon": 18.0968951,
+    "status": "ok",
+    "display_name": "26, Ljusslingan, Danviksklippan, Södra Hammarbyhamnen, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 120 31, Sverige"
+  },
+  "Bobergsgatan 81-83, Stockholm": {
+    "lat": 59.3529234,
+    "lon": 18.0853404,
+    "status": "ok",
+    "display_name": "Bobergsgatan, Gasverket, Hjorthagen, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 44, Sverige"
+  },
+  "Skårbygränd 1, Stockholm": {
+    "lat": 59.3886785,
+    "lon": 17.9270575,
+    "status": "ok",
+    "display_name": "1, Skårbygränd, Sörgården, Rinkeby, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 163 72, Sverige"
+  },
+  "Skarpnäcks allé 25": {
+    "lat": 59.2679013,
+    "lon": 18.1289155,
+    "status": "ok",
+    "display_name": "Skarpnäcks Kulturhus, 25, Skarpnäcks Allé, Skarpnäcks gård, Skarpnäcks stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 128 33, Sverige"
+  },
+  "Bredholmsgatan 4, Stockholm": {
+    "lat": 59.2747598,
+    "lon": 17.9064915,
+    "status": "ok",
+    "display_name": "Bredholmsgatan, Skärholmen, Skärholmens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 127 48, Sverige"
+  },
+  "Sköndalsvägen 91, Stockholm": {
+    "lat": 59.2555,
+    "lon": 18.1142,
+    "status": "ok",
+    "display_name": "Hemköp Sköndal C, 91, Sköndalsvägen, Sköndal, Farsta stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 128 66, Sverige"
+  },
+  "Värsta Allé 12, Stockholm": {
+    "lat": 59.3819046,
+    "lon": 17.8967077,
+    "status": "ok",
+    "display_name": "Värsta allé, Solhöjden, Solhem, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 163 51, Sverige"
+  },
+  "Essingestråket 24, Stockholm": {
+    "lat": 59.3208091,
+    "lon": 17.9861386,
+    "status": "ok",
+    "display_name": "Lycée Français Saint Louis de Stockholm, 24, Essingestråket, Stora Essingen, Kungsholmens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 112 66, Sverige"
+  },
+  "Grev Turegatan 6, Stockholm": {
+    "lat": 59.3351954,
+    "lon": 18.0748695,
+    "status": "ok",
+    "display_name": "Grev Turegatan, Eriksberg, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 46, Sverige"
+  },
+  "Artemisgatan 30a, Stockholm": {
+    "lat": 59.3564215,
+    "lon": 18.0985694,
+    "status": "ok",
+    "display_name": "30A, Artemisgatan, Gasverket, Hjorthagen, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 40, Sverige"
+  },
+  "Hornsbruksgatan 25, Stockholm": {
+    "lat": 59.3160198,
+    "lon": 18.0350751,
+    "status": "ok",
+    "display_name": "25, Hornsbruksgatan, Hornstull, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 117 34, Sverige"
+  },
+  "Edvard Griegsgången 9, Stockholm": {
+    "lat": 59.407809,
+    "lon": 17.9289927,
+    "status": "ok",
+    "display_name": "Edvard Griegsgången, Husby, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 164 34, Sverige"
+  },
+  "Telefonplan 1, Stockholm": {
+    "lat": 59.298882,
+    "lon": 17.9964701,
+    "status": "ok",
+    "display_name": "1, Telefonplan, Midsommarkransen, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 126 37, Sverige"
+  },
+  "Hagstråket 13, Stockholm": {
+    "lat": 59.395534,
+    "lon": 17.8979108,
+    "status": "ok",
+    "display_name": "Tensta träff, 13, Hagstråket, Tensta, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 163 64, Sverige"
+  },
+  "Medborgarplatsen 2, Stockholm": {
+    "lat": 59.3145466,
+    "lon": 18.0718565,
+    "status": "ok",
+    "display_name": "2, Medborgarplatsen, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 26, Sverige"
+  },
+  "Vittangigatan 24, Stockholm": {
+    "lat": 59.3624519,
+    "lon": 17.870496,
+    "status": "ok",
+    "display_name": "Vällingby bibliotek, 24, Vittangigatan, Vällingby, Hässelby-Vällingby stadsdelsområde, Stockholms kommun, Stockholms län, 162 61, Sverige"
+  },
+  "Årsta torg 5": {
+    "lat": 59.297274,
+    "lon": 18.0516471,
+    "status": "ok",
+    "display_name": "5, Årsta Torg, Östberga, Årsta, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 120 54, Sverige"
+  },
+  "Älvsjö stationsgata 21, Stockholm": {
+    "lat": 59.2782333,
+    "lon": 18.00808,
+    "status": "ok",
+    "display_name": "Älvsjö Stationsgata, Älvsjö, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 125 31, Sverige"
+  },
+  "Gamla Huddingevägen 425": {
+    "lat": 59.2748688,
+    "lon": 18.0265722,
+    "status": "ok",
+    "display_name": "425, Gamla Huddingevägen, Älvsjö, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 125 42, Sverige"
+  },
+  "Östbergatorget 14, Stockholm": {
+    "lat": 59.2889218,
+    "lon": 18.0332425,
+    "status": "ok",
+    "display_name": "Östberga Kulturhus, 14, Östbergatorget, Östberga, Älvsjö, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 125 72, Sverige"
+  },
+  "Valhallavägen 146, Stockholm": {
+    "lat": 59.3401054,
+    "lon": 18.0919707,
+    "status": "ok",
+    "display_name": "146, Valhallavägen, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 24, Sverige"
+  },
+  "Bryggargatan 12A, Stockholm": {
+    "lat": 59.3329273,
+    "lon": 18.0587865,
+    "status": "ok",
+    "display_name": "Goethe Institut, 12a, Bryggargatan, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 21, Sverige"
+  },
+  "Drottninggatan 95B, Stockholm": {
+    "lat": 59.3403745,
+    "lon": 18.0545068,
+    "status": "ok",
+    "display_name": "95B, Drottninggatan, Sibirien, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 60, Sverige"
+  },
+  "Gustavslundsvägen 170, Stockholm": {
+    "lat": 59.3287786,
+    "lon": 17.985281,
+    "status": "ok",
+    "display_name": "Gustavslundsvägen, Alviks Strand, Alvik, Bromma stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 167 40, Sverige"
+  },
+  "Herbert Widmans väg 5A, Stockholm": {
+    "lat": 59.250138,
+    "lon": 18.1195031,
+    "status": "ok",
+    "display_name": "Herbert Widmans Väg, Sköndal, Farsta stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 128 68, Sverige"
+  },
+  "Snickarbacken 2, Stockholm": {
+    "lat": 59.3380666,
+    "lon": 18.0683159,
+    "status": "ok",
+    "display_name": "2, Snickarbacken, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 27, Sverige"
+  },
+  "Stigbergsgatan 30A, Stockholm": {
+    "lat": 59.3166882,
+    "lon": 18.0882469,
+    "status": "ok",
+    "display_name": "Stigbergsgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 45, Sverige"
+  },
+  "Sveavägen 65, Stockholm": {
+    "lat": 59.3416984,
+    "lon": 18.0572597,
+    "status": "ok",
+    "display_name": "65, Sveavägen, Sibirien, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 59, Sverige"
+  },
+  "Tegelviksgatan 40, Stockholm": {
+    "lat": 59.3093862,
+    "lon": 18.0968174,
+    "status": "ok",
+    "display_name": "40, Tegelviksgatan, Danvikstull, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 47, Sverige"
+  },
+  "Valhallavägen 91, Stockholm": {
+    "lat": 59.3456217,
+    "lon": 18.0755612,
+    "status": "ok",
+    "display_name": "91, Valhallavägen, Ruddammen, Norra Djurgården, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 28, Sverige"
+  },
+  "Wahrendorffsgatan 3B, Stockholm": {
+    "lat": 59.3318894,
+    "lon": 18.0742245,
+    "status": "ok",
+    "display_name": "3B, Wahrendorffsgatan, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 103 27, Sverige"
+  },
+  "Hantverkargatan 45, Stockholm": {
+    "lat": 59.3292665,
+    "lon": 18.0411914,
+    "status": "ok",
+    "display_name": "Hantverkargatan, Kungsholmen, Kungsholmens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 112 23, Sverige"
+  },
+  "Banérgatan 62, Stockholm": {
+    "lat": 59.341303,
+    "lon": 18.0985922,
+    "status": "ok",
+    "display_name": "62, Banérgatan, Gärdeshöjden, Ladugårdsgärdet, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 29, Sverige"
+  },
+  "Banérgatan 64, Stockholm": {
+    "lat": 59.3417551,
+    "lon": 18.0984073,
+    "status": "ok",
+    "display_name": "64, Banérgatan, Gärdeshöjden, Ladugårdsgärdet, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 29, Sverige"
+  },
+  "Brinellvägen 58, Stockholm": {
+    "lat": 59.3532315,
+    "lon": 18.0665556,
+    "status": "ok",
+    "display_name": "58, Brinellvägen, Ruddammen, Norra Djurgården, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 100 44, Sverige"
+  },
+  "Djurgårdsbrunnsvägen 24, Stockholm": {
+    "lat": 59.3326212,
+    "lon": 18.1157271,
+    "status": "ok",
+    "display_name": "24, Djurgårdsbrunnsvägen, Lindarängen, Ladugårdsgärdet, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 27, Sverige"
+  },
+  "Djurgårdsvägen 10, Stockholm": {
+    "lat": 59.1937054,
+    "lon": 18.1862294,
+    "status": "ok",
+    "display_name": "10, Djurgårdsvägen, Söderby, Handen, Haninge kommun, Stockholms län, 136 71, Sverige"
+  },
+  "Drottning Kristinas väg 37, Stockholm": {
+    "lat": 59.3491458,
+    "lon": 18.0694968,
+    "status": "ok",
+    "display_name": "37, Drottning Kristinas Väg, Ruddammen, Norra Djurgården, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 28, Sverige"
+  },
+  "Exercisplan 4, Stockholm": {
+    "lat": 59.325856,
+    "lon": 18.0843509,
+    "status": "ok",
+    "display_name": "4, Exercisplan, Skeppsholmen, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 49, Sverige"
+  },
+  "Flaggmansvägen 1, Stockholm": {
+    "lat": 59.3245737,
+    "lon": 18.0820912,
+    "status": "ok",
+    "display_name": "Flaggmansvägen, Skeppsholmen, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 49, Sverige"
+  },
+  "Fredsgatan 12, Stockholm": {
+    "lat": 59.3286831,
+    "lon": 18.0644249,
+    "status": "ok",
+    "display_name": "12, Fredsgatan, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 103 21, Sverige"
+  },
+  "Frescativägen 40, Stockholm": {
+    "lat": 59.3687947,
+    "lon": 18.0534787,
+    "status": "ok",
+    "display_name": "40, Frescativägen, Frescati, Norra Djurgården, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 18, Sverige"
+  },
+  "Fyrverkarbacken 13, Stockholm": {
+    "lat": 59.3268258,
+    "lon": 18.0225657,
+    "status": "ok",
+    "display_name": "13, Fyrverkarbacken, Marieberg, Kungsholmens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 100 26, Sverige"
+  },
+  "Holmamiralens väg 2, Stockholm": {
+    "lat": 59.3246767,
+    "lon": 18.083498,
+    "status": "ok",
+    "display_name": "Holmamiralens Väg, Skeppsholmen, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 49, Sverige"
+  },
+  "Humlegårdsgatan 26, Stockholm": {
+    "lat": 59.3380801,
+    "lon": 18.0720383,
+    "status": "ok",
+    "display_name": "26, Humlegårdsgatan, Eriksberg, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 46, Sverige"
+  },
+  "Karlavägen 104, Stockholm": {
+    "lat": 59.3357493,
+    "lon": 18.0981976,
+    "status": "ok",
+    "display_name": "104, Karlavägen, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 26, Sverige"
+  },
+  "Klara norra kyrkogata 34, Stockholm": {
+    "lat": 59.3347646,
+    "lon": 18.0576208,
+    "status": "ok",
+    "display_name": "34, Klara Norra Kyrkogata, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 22, Sverige"
+  },
+  "Kräftriket 21A, Stockholm": {
+    "lat": 59.3561365,
+    "lon": 18.053802,
+    "status": "ok",
+    "display_name": "Kräftriket, Albano, Norra Djurgården, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 19, Sverige"
+  },
+  "Kräftriket 6B, Stockholm": {
+    "lat": 59.3561365,
+    "lon": 18.053802,
+    "status": "ok",
+    "display_name": "Kräftriket, Albano, Norra Djurgården, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 19, Sverige"
+  },
+  "Alfred Nobels Allé 7, 141 89 Huddinge": {
+    "lat": 59.219461,
+    "lon": 17.9430918,
+    "status": "ok",
+    "display_name": "7, Alfred Nobels Allé, Visättra, Flemingsberg, Huddinge, Huddinge kommun, Stockholms län, 141 57, Sverige"
+  },
+  "Folkets hus väg 5, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Norra uppsalavägen 15, Stockholm": {
+    "lat": 60.0500342,
+    "lon": 18.5958667,
+    "status": "ok",
+    "display_name": "Hallstaviks bibliotek, 15, Norra Uppsalavägen, Skärsta, Hallstavik, Norrtälje kommun, Stockholms län, 763 40, Sverige"
+  },
+  "Lidingövägen 1": {
+    "lat": 59.3452111,
+    "lon": 18.078824,
+    "status": "ok",
+    "display_name": "Stockholms Olympiastadion, 1, Lidingövägen, Ladugårdsgärdet, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 33, Sverige"
+  },
+  "LM Ericssons väg 14, Stockholm": {
+    "lat": 59.2997731,
+    "lon": 17.9942096,
+    "status": "ok",
+    "display_name": "Konstfack, 14, LM Ericssons Väg, Midsommarkransen, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 126 26, Sverige"
+  },
+  "Museivägen 7, Stockholm": {
+    "lat": 59.3325056,
+    "lon": 18.1189933,
+    "status": "ok",
+    "display_name": "7, Museivägen, Lindarängen, Ladugårdsgärdet, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 27, Sverige"
+  },
+  "Odengatan 61, Stockholm": {
+    "lat": 59.3431901,
+    "lon": 18.0530572,
+    "status": "ok",
+    "display_name": "61, Odengatan, Sibirien, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 50, Sverige"
+  },
+  "Osquars backe 31, Stockholm": {
+    "lat": 59.3478558,
+    "lon": 18.0730189,
+    "status": "ok",
+    "display_name": "31, Osquars Backe, Ruddammen, Norra Djurgården, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 100 44, Sverige"
+  },
+  "Roslagstullsbacken 21, Stockholm": {
+    "lat": 59.3534765,
+    "lon": 18.0579839,
+    "status": "ok",
+    "display_name": "21, Roslagstullsbacken, Albano, Norra Djurgården, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 106 91, Sverige"
+  },
+  "Storgatan 41, Stockholm": {
+    "lat": 59.334152,
+    "lon": 18.0901659,
+    "status": "ok",
+    "display_name": "41, Storgatan, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 55, Sverige"
+  },
+  "Svante Arrhenius väg 12, Stockholm": {
+    "lat": 59.3669138,
+    "lon": 18.0585166,
+    "status": "ok",
+    "display_name": "Svante Arrhenius väg, Lappkärrsberget, Norra Djurgården, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 18, Sverige"
+  },
+  "Sveavägen 162, Stockholm": {
+    "lat": 59.3511533,
+    "lon": 18.0522022,
+    "status": "ok",
+    "display_name": "162, Sveavägen, Sibirien, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 46, Sverige"
+  },
+  "Torsgatan 19, Stockholm": {
+    "lat": 59.3371302,
+    "lon": 18.0425517,
+    "status": "ok",
+    "display_name": "19, Torsgatan, Atlasområdet, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 21, Sverige"
+  },
+  "Universitetvägen 10B, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Universitetvägen 14D, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Valhallavägen 136, Stockholm": {
+    "lat": 59.3411153,
+    "lon": 18.0876617,
+    "status": "ok",
+    "display_name": "136, Valhallavägen, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 20, Sverige"
+  },
+  "Valhallavägen 195, Stockholm": {
+    "lat": 59.339381,
+    "lon": 18.102231,
+    "status": "ok",
+    "display_name": "195, Valhallavägen, Ladugårdsgärdet, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 53, Sverige"
+  },
+  "Isafjordsgatan 26, Stockholm": {
+    "lat": 59.4052481,
+    "lon": 17.9491163,
+    "status": "ok",
+    "display_name": "26, Isafjordsgatan, Kista, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 164 21, Sverige"
+  },
+  "Kommunalvägen 28 A, 141 27 Huddinge": {
+    "lat": 59.2390141,
+    "lon": 17.9886017,
+    "status": "ok",
+    "display_name": "Huddinge huvudbibliotek, 28A, Kommunalvägen, Kvarnbergsplan, Sjödalen, Huddinge, Huddinge kommun, Stockholms län, 141 61, Sverige"
+  },
+  "Häradsvägen 252, 141 71 Segeltorp": {
+    "lat": 59.2785587,
+    "lon": 17.9433936,
+    "status": "ok",
+    "display_name": "Häradsvägen, Jakobslund, Segeltorp, Huddinge kommun, Stockholms län, 141 71, Sverige"
+  },
+  "Skogåstorget 7-9, 142 30 Skogås": {
+    "lat": 59.2175912,
+    "lon": 18.1522002,
+    "status": "ok",
+    "display_name": "Skogåstorget, Lyckåsen, Skogås, Drevviksstrand, Huddinge kommun, Stockholms län, 142 30, Sverige"
+  },
+  "Vårby allé 26, 143 40 Vårby": {
+    "lat": 59.2549997,
+    "lon": 17.8751325,
+    "status": "ok",
+    "display_name": "Vårby allé, Masmo, Vårby, Huddinge kommun, Stockholms län, 143 30, Sverige"
+  },
+  "Ebba Bååts torg 20, 141 51 Huddinge": {
+    "lat": 59.2189231,
+    "lon": 17.9497146,
+    "status": "ok",
+    "display_name": "Ebba Bååts torg, Visättra, Flemingsberg, Huddinge, Huddinge kommun, Stockholms län, 141 50, Sverige"
+  },
+  "Billborgsgatan 3, Stockholm": {
+    "lat": 59.7598544,
+    "lon": 18.7047857,
+    "status": "ok",
+    "display_name": "Billborgsgatan, Gransäter, Fågelsången, Norrtälje, Norrtälje kommun, Stockholms län, 761 30, Sverige"
+  },
+  "Rimbo torg 13, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Sandviksvägen 4a, Stockholm": {
+    "lat": 59.496027,
+    "lon": 17.7282909,
+    "status": "ok",
+    "display_name": "4A, Sandviksvägen, Lärksoppen, Brunna, Kungsängen, Upplands-Bro kommun, Stockholms län, 196 36, Sverige"
+  },
+  "Fasternavägen 24, Stockholm": {
+    "lat": 59.7948701,
+    "lon": 18.2888339,
+    "status": "ok",
+    "display_name": "Rånäs Skola, 24, Fasternavägen, Rånäs, Norrtälje kommun, Stockholms län, 762 96, Sverige"
+  },
+  "Skolbacken 7, Stockholm": {
+    "lat": 59.6385007,
+    "lon": 18.6577061,
+    "status": "ok",
+    "display_name": "Skolbacken, Hästängen, Solvik, Bergshamra, Norrtälje kommun, Stockholms län, 760 10, Sverige"
+  },
+  "Love Almqvists torg 1, Stockholm": {
+    "lat": 59.5208707,
+    "lon": 17.9016759,
+    "status": "ok",
+    "display_name": "Upplands Väsby bibliotek, 1, Love Almqvists torg, Vilunda, Upplands Väsby, Upplands Väsby kommun, Stockholms län, 194 80, Sverige"
+  },
+  "Allévägen 1, Stockholm": {
+    "lat": 59.3294707,
+    "lon": 17.9763549,
+    "status": "ok",
+    "display_name": "1, Allévägen, Äppelviken, Bromma stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 167 52, Sverige"
+  },
+  "Vadavägen 1C, Stockholm": {
+    "lat": 59.5610075,
+    "lon": 18.2205292,
+    "status": "ok",
+    "display_name": "Karby bibliotek, 1C, Vadavägen, Karby, Vallentuna kommun, Stockholms län, 186 70, Sverige"
+  },
+  "Bergsjövägen 1, Stockholm": {
+    "lat": 59.6540671,
+    "lon": 18.2744546,
+    "status": "ok",
+    "display_name": "Bergsjövägen, Backa, Eriksdal, Kårsta, Vallentuna kommun, Stockholms län, 186 60, Sverige"
+  },
+  "Bro centrum 1, 19731 Bro": {
+    "lat": 60.1103253,
+    "lon": 24.4420062,
+    "status": "ok",
+    "display_name": "1, Bronkuja, Bro, Kuntakeskus, Keskinen Kirkkonummi, Kirkkonummi, Helsingin seutukunta, Uusimaa, Manner-Suomi, 02480, Suomi / Finland"
+  },
+  "Furuhällsplan 1, 19640 Kungsängen": {
+    "lat": 59.478449,
+    "lon": 17.7513474,
+    "status": "ok",
+    "display_name": "1, Furuhällsplan, Kungsängen, Upplands-Bro kommun, Stockholms län, 196 40, Sverige"
+  },
+  "Hallonbergsplan 7, Stockholm": {
+    "lat": 59.3754396,
+    "lon": 17.9683662,
+    "status": "ok",
+    "display_name": "Hallonbergens bibliotek, 7, Hallonbergsplan, Hallonbergen, Sundbybergs kommun, Stockholms län, 174 52, Sverige"
+  },
+  "Esplanaden 10, Stockholm": {
+    "lat": 59.362532,
+    "lon": 17.965526,
+    "status": "ok",
+    "display_name": "Sundbybergs bibliotek, 10, Esplanaden, Hästhagen, Centrala Sundbyberg, Sundbybergs kommun, Stockholms län, 172 67, Sverige"
+  },
+  "Östangränd 7, Stockholm": {
+    "lat": 59.2451069,
+    "lon": 18.2288111,
+    "status": "ok",
+    "display_name": "Biblioteket i Tyresö centrum, 7, Östangränd, Bollmora, Tyresö kommun, Stockholms län, 135 21, Sverige"
+  },
+  "Kumla Allé 7, 135 51 Tyresö": {
+    "lat": 59.2218566,
+    "lon": 18.2004269,
+    "status": "ok",
+    "display_name": "7, Kumla Allé, Persudde, Kumla, Tyresö kommun, Stockholms län, 135 53, Sverige"
+  },
+  "130 39 Sandhamn": {
+    "lat": 60.1524761,
+    "lon": 25.049372,
+    "status": "ok",
+    "display_name": "Santahamina, Kaakkoinen suurpiiri, Helsinki, Helsingin seutukunta, Uusimaa, Manner-Suomi, 00860, Suomi / Finland"
+  },
+  "130 36 Nämdö": {
+    "lat": 59.1721712,
+    "lon": 18.6067272,
+    "status": "ok",
+    "display_name": "Nämdö, Värmdö kommun, Stockholms län, Sverige"
+  },
+  "Motionsvägen 4, 139 32 Värmdö": {
+    "lat": 59.3191714,
+    "lon": 18.4885063,
+    "status": "ok",
+    "display_name": "Värmdö sporthall, 4B, Motionsvägen, Torshäll, Hagaberg, Hemmesta, Värmdö kommun, Stockholms län, 139 32, Sverige"
+  },
+  "Lagergrens väg 15 / Strandtorget 15, 135 63 Tyresö": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Norra Kronans gata 429, 136 76 Brandbergen": {
+    "lat": 59.1733521,
+    "lon": 18.1732989,
+    "status": "ok",
+    "display_name": "Norra Kronans gata, Brandbergen, Handen, Haninge kommun, Stockholms län, 136 61, Sverige"
+  },
+  "Poseidons torg 8, 139 46 Handen": {
+    "lat": 59.1672538,
+    "lon": 18.1393391,
+    "status": "ok",
+    "display_name": "Poseidons Torg, Handen, Haninge kommun, Stockholms län, 136 43, Sverige"
+  },
+  "Vega Allé 61, 136 57 Vega": {
+    "lat": 59.1851633,
+    "lon": 18.1339744,
+    "status": "ok",
+    "display_name": "Café Vega, 61, Vega Allé, Mellanberg, Vega, Haninge kommun, Stockholms län, 136 57, Sverige"
+  },
+  "Centrumvägen 7, 137 38 Västerhaninge": {
+    "lat": 59.1224505,
+    "lon": 18.1044351,
+    "status": "ok",
+    "display_name": "Biblioteket i Västerhaninge, 7, Centrumvägen, Västerhaninge, Haninge kommun, Stockholms län, 137 38, Sverige"
+  },
+  "Hurtigs torg 2, 137 64 Jordbro": {
+    "lat": 59.1413976,
+    "lon": 18.1323709,
+    "status": "ok",
+    "display_name": "Jordbro vårdcentral, 2, Hurtigs Torg, Jordbro, Haninge kommun, Stockholms län, 137 64, Sverige"
+  },
+  "Carl Bondes väg 12, Stockholm": {
+    "lat": 59.3792982,
+    "lon": 17.8189829,
+    "status": "ok",
+    "display_name": "12, Carl Bondes väg, Hässelby Villastad, Hässelby-Vällingby stadsdelsområde, Stockholms kommun, Stockholms län, 165 74, Sverige"
+  },
+  "Stadshusplatsen 3, Stockholm": {
+    "lat": 58.9022005,
+    "lon": 17.946184,
+    "status": "ok",
+    "display_name": "Nynäshamns bildarkiv, 3, Stadshusplatsen, Heimdal, Nynäshamn, Nynäshamns kommun, Stockholms län, 149 81, Sverige"
+  },
+  "Ösmo centrum 4, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Eriksbergsvägen 9, Stockholm": {
+    "lat": 59.4128117,
+    "lon": 17.9567788,
+    "status": "ok",
+    "display_name": "Eriksbergsvägen, Helenelund, Sollentuna kommun, Sundbybergs kommun, Stockholms län, 191 41, Sverige"
+  },
+  "Gröndalsvägen 1, Stockholm": {
+    "lat": 59.3144388,
+    "lon": 18.0157508,
+    "status": "ok",
+    "display_name": "1, Gröndalsvägen, Gröndal, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 117 66, Sverige"
+  },
+  "Lunagallerian 4, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Sandviksvägen 60, Stockholm": {
+    "lat": 59.3722573,
+    "lon": 17.8208174,
+    "status": "ok",
+    "display_name": "60, Sandviksvägen, Hässelby strand, Hässelby-Vällingby stadsdelsområde, Stockholms kommun, Stockholms län, 165 70, Sverige"
+  },
+  "Skolvägen 13, Stockholm": {
+    "lat": 59.4557288,
+    "lon": 17.9225938,
+    "status": "ok",
+    "display_name": "13, Skolvägen, Pommern, Norrviken, Sollentuna kommun, Stockholms län, 192 70, Sverige"
+  },
+  "Storgatan 4, Stockholm": {
+    "lat": 59.3352467,
+    "lon": 18.0822257,
+    "status": "ok",
+    "display_name": "4, Storgatan, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 45, Sverige"
+  },
+  "Bibliotekstorget 12, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Bällstaågatan 18, Stockholm": {
+    "lat": 59.3633572,
+    "lon": 17.955135,
+    "status": "ok",
+    "display_name": "18, Bällstaågatan, Annedal, Mariehäll, Bromma stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 172 75, Sverige"
+  },
+  "Gjutarplan 8, Stockholm": {
+    "lat": 59.454321,
+    "lon": 17.8072933,
+    "status": "ok",
+    "display_name": "Kallhälls bibliotek, 8, Gjutarplan, Kallhäll, Villastaden, Järfälla kommun, Stockholms län, 176 71, Sverige"
+  },
+  "Viksjöplan 6, Stockholm": {
+    "lat": 59.411945,
+    "lon": 17.8038728,
+    "status": "ok",
+    "display_name": "Viksjö bibliotek, 6, Viksjöplan, Viksjö, Järfälla kommun, Stockholms län, 175 45, Sverige"
+  },
+  "Väpnarstråket, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Sollenkrokavägen 41, 139 73 Djurhamn": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Tyra Lundgrensväg 19, 134 40 Gustavsberg": {
+    "lat": 59.3234004,
+    "lon": 18.3816051,
+    "status": "ok",
+    "display_name": "Tyra Lundgrens väg, Charlottendal, Gustavsberg, Värmdö kommun, Stockholms län, 134 52, Sverige"
+  },
+  "Säbyhallsvägen 34, Stockholm": {
+    "lat": 59.2037289,
+    "lon": 17.7650137,
+    "status": "ok",
+    "display_name": "Säbyhallsvägen, Salem, Salems kommun, Stockholms län, 144 37, Sverige"
+  },
+  "Akalla by 12, Stockholm": {
+    "lat": 59.4123821,
+    "lon": 17.9121888,
+    "status": "ok",
+    "display_name": "Akalla By, Akalla, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 164 79, Sverige"
+  },
+  "Gustavslundsvägen 168A, Stockholm": {
+    "lat": 59.3287786,
+    "lon": 17.985281,
+    "status": "ok",
+    "display_name": "Gustavslundsvägen, Alviks Strand, Alvik, Bromma stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 167 40, Sverige"
+  },
+  "Lillåvägen 44, Stockholm": {
+    "lat": 59.2763839,
+    "lon": 18.1361638,
+    "status": "ok",
+    "display_name": "Lillåvägen, Bagarmossen, Skarpnäcks stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 128 46, Sverige"
+  },
+  "Karlbergsvägen 86A, Stockholm": {
+    "lat": 59.3433583,
+    "lon": 18.0281604,
+    "status": "ok",
+    "display_name": "86A, Karlbergsvägen, Rörstrand, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 35, Sverige"
+  },
+  "Götalandsvägen 181, Stockholm": {
+    "lat": 59.2831429,
+    "lon": 18.0272702,
+    "status": "ok",
+    "display_name": "Park Folkets Hus, 181, Götalandsvägen, Liseberg, Älvsjö, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 125 35, Sverige"
+  },
+  "Eggeby Gård 1, Stockholm": {
+    "lat": 59.3984373,
+    "lon": 17.9189748,
+    "status": "ok",
+    "display_name": "Eggeby Gård, Granby, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 163 62, Sverige"
+  },
+  "Farsta Ängsvägen 22": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Valhallavägen 152, Stockholm": {
+    "lat": 59.346282,
+    "lon": 18.0679155,
+    "status": "ok",
+    "display_name": "Valhallavägen, Lärkstaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 100 41, Sverige"
+  },
+  "Sankt Paulsgatan 39D, Stockholm": {
+    "lat": 59.3183608,
+    "lon": 18.0693249,
+    "status": "ok",
+    "display_name": "Sankt Paulsgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 46, Sverige"
+  },
+  "Artemisgatan 19, Stockholm": {
+    "lat": 59.3556024,
+    "lon": 18.0993257,
+    "status": "ok",
+    "display_name": "19, Artemisgatan, Gasverket, Hjorthagen, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 42, Sverige"
+  },
+  "Husby gård 8, Stockholm": {
+    "lat": 59.407209,
+    "lon": 17.9197006,
+    "status": "ok",
+    "display_name": "Husby gård, Husby, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 164 32, Sverige"
+  },
+  "Edvard Griegsgången, Stockholm": {
+    "lat": 59.407809,
+    "lon": 17.9289927,
+    "status": "ok",
+    "display_name": "Edvard Griegsgången, Husby, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 164 34, Sverige"
+  },
+  "Riksdalervägen 2, Stockholm": {
+    "lat": 59.2971036,
+    "lon": 17.9837373,
+    "status": "ok",
+    "display_name": "Hägerstensåsens medborgarhus, 2, Riksdalervägen, Hägerstensåsen, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 129 32, Sverige"
+  },
+  "Odd Fellowvägen 18A, Stockholm": {
+    "lat": 59.2991314,
+    "lon": 17.9383332,
+    "status": "ok",
+    "display_name": "18A, Odd Fellowvägen, Bredäng, Skärholmens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 127 32, Sverige"
+  },
+  "Kristinehovsgatan 2, Stockholm": {
+    "lat": 59.3182373,
+    "lon": 18.0413768,
+    "status": "ok",
+    "display_name": "2, Kristinehovsgatan, Zinkensdamm, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 117 28, Sverige"
+  },
+  "Telefonvägen 20, Stockholm": {
+    "lat": 59.2989097,
+    "lon": 17.9967964,
+    "status": "ok",
+    "display_name": "20, Telefonvägen, Midsommarkransen, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 126 36, Sverige"
+  },
+  "Svartmangatan 6, Stockholm": {
+    "lat": 59.3247059,
+    "lon": 18.0712596,
+    "status": "ok",
+    "display_name": "6A-E, Svartmangatan, Gamla stan, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 29, Sverige"
+  },
+  "Färgargårdstorget 1, Stockholm": {
+    "lat": 59.3087083,
+    "lon": 18.0926865,
+    "status": "ok",
+    "display_name": "1, Färgargårdstorget, Danvikstull, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 38, Sverige"
+  },
+  "Rågsvedstorget 11, Stockholm": {
+    "lat": 59.2572671,
+    "lon": 18.0274713,
+    "status": "ok",
+    "display_name": "Folkets hus, 11, Rågsvedstorget, Rågsved, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 124 65, Sverige"
+  },
+  "Bredholmstorget 14, Stockholm": {
+    "lat": 59.2754551,
+    "lon": 17.9051873,
+    "status": "ok",
+    "display_name": "Bredholmstorget, Skärholmen, Skärholmens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 127 48, Sverige"
+  },
+  "Östra Brobänken, Stockholm": {
+    "lat": 59.3270785,
+    "lon": 18.0853155,
+    "status": "ok",
+    "display_name": "Östra brobänken, Skeppsholmen, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 49, Sverige"
+  },
+  "Bagarfruvägen 44, Stockholm": {
+    "lat": 59.2565612,
+    "lon": 18.114203,
+    "status": "ok",
+    "display_name": "Bagarfruvägen, Sköndal, Farsta stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 128 66, Sverige"
+  },
+  "Spångavägen 353": {
+    "lat": 59.3729873,
+    "lon": 17.8997748,
+    "status": "ok",
+    "display_name": "Spånga Folkan (Spånga Folkets Hus), 353, Spångavägen, Flysta, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 163 55, Sverige"
+  },
+  "Götgatan 37, Stockholm": {
+    "lat": 59.316064,
+    "lon": 18.0724738,
+    "status": "ok",
+    "display_name": "37, Götgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 21, Sverige"
+  },
+  "Timmermansgatan 46, Stockholm": {
+    "lat": 59.3142974,
+    "lon": 18.0612305,
+    "status": "ok",
+    "display_name": "46-48, Timmermansgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 55, Sverige"
+  },
+  "Vällingby backe 13, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Hjälmarsvägen 26, Stockholm": {
+    "lat": 59.2975284,
+    "lon": 18.0526946,
+    "status": "ok",
+    "display_name": "Bio Kontrast, 26, Hjälmarsvägen, Östberga, Årsta, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 120 53, Sverige"
+  },
+  "Tjäderstigen 16, 142 63 Trångsund": {
+    "lat": 59.2294083,
+    "lon": 18.1380529,
+    "status": "ok",
+    "display_name": "Tjäderstigen, Hammartorp, Trångsund, Fållan, Huddinge kommun, Stockholms län, 142 60, Sverige"
+  },
+  "Bergby byaväg 3, Stockholm": {
+    "lat": 60.0589918,
+    "lon": 18.7406278,
+    "status": "ok",
+    "display_name": "Bergby Byaväg, Norrtälje kommun, Stockholms län, Sverige"
+  },
+  "Bygdegårdsvägen 2a, Stockholm": {
+    "lat": 59.2332028,
+    "lon": 18.1386079,
+    "status": "ok",
+    "display_name": "Bygdegårdsvägen, Hammartorp, Trångsund, Fållan, Huddinge kommun, Stockholms län, 142 60, Sverige"
+  },
+  "Skeppsmyravägen 10, Stockholm": {
+    "lat": 59.829537,
+    "lon": 19.0516022,
+    "status": "ok",
+    "display_name": "Skeppsmyravägen, Skeppsmyra, Skaten, Norrtälje kommun, Stockholms län, 764 53, Sverige"
+  },
+  "Roslagsbrovägen 147, Stockholm": {
+    "lat": 59.856277,
+    "lon": 18.7426291,
+    "status": "ok",
+    "display_name": "Roslagsbrovägen, Ekeby, Norrtälje kommun, Stockholms län, Sverige"
+  },
+  "Stora ramviksvägen 233, Stockholm": {
+    "lat": 59.910485,
+    "lon": 18.8846006,
+    "status": "ok",
+    "display_name": "Stora Ramviksvägen, Strömsborg, Norrtälje kommun, Stockholms län, 761 75, Sverige"
+  },
+  "Rävsnäs bryggväg 6, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Edsbro bruksgata 27, Stockholm": {
+    "lat": 59.8877341,
+    "lon": 18.4934517,
+    "status": "ok",
+    "display_name": "Edsbro Bruksgata, Sanddalen, Edsbro, Norrtälje kommun, Stockholms län, 762 97, Sverige"
+  },
+  "Flemmingsbergsvägen 38, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Hargs by 82, Stockholm": {
+    "lat": 59.8086244,
+    "lon": 18.9630632,
+    "status": "ok",
+    "display_name": "Hargs by, Vätö, Harg, Norrtälje kommun, Stockholms län, 760 21, Sverige"
+  },
+  "Byhusvägen 20, Stockholm": {
+    "lat": 59.6170783,
+    "lon": 18.4374266,
+    "status": "ok",
+    "display_name": "Byhusvägen, Sättra, Norrtälje kommun, Stockholms län, Sverige"
+  },
+  "Galles gränd 5, Stockholm": {
+    "lat": 59.7562689,
+    "lon": 18.7001166,
+    "status": "ok",
+    "display_name": "5, Galles gränd, Grossgärdet, Grind, Norrtälje, Norrtälje kommun, Stockholms län, 761 30, Sverige"
+  },
+  "Stockholmsvägen 1a": {
+    "lat": 59.2788291,
+    "lon": 18.0809374,
+    "status": "ok",
+    "display_name": "Stockholmsvägen, Gamla Enskede, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 122 63, Sverige"
+  },
+  "Furusundsvägen 198, Stockholm": {
+    "lat": 59.6791641,
+    "lon": 18.7366396,
+    "status": "ok",
+    "display_name": "Furusundsvägen, Edsberg, Hysingsvik, Norrtälje kommun, Stockholms län, 761 83, Sverige"
+  },
+  "Lohäradsvägen 231a, Stockholm": {
+    "lat": 59.7718608,
+    "lon": 18.5450906,
+    "status": "ok",
+    "display_name": "Lohäradsvägen, Sättralund, Norrtälje kommun, Stockholms län, 761 91, Sverige"
+  },
+  "Gräddö varvsväg 12, Stockholm": {
+    "lat": 59.7664404,
+    "lon": 19.0319911,
+    "status": "ok",
+    "display_name": "Gräddö varvsväg, Västerbyn, Gräddö, Norrtälje kommun, Stockholms län, 760 15, Sverige"
+  },
+  "Singö skolväg 10, Stockholm": {
+    "lat": 60.1619214,
+    "lon": 18.744446,
+    "status": "ok",
+    "display_name": "Singö skolväg, Söderby, Norrtälje kommun, Stockholms län, 764 57, Sverige"
+  },
+  "Sättrabyvägen 40, Stockholm": {
+    "lat": 59.8435362,
+    "lon": 18.4371054,
+    "status": "ok",
+    "display_name": "Sättraby Bygdegård, 40, Sättrabyvägen, Tallund, Edsbro, Norrtälje kommun, Stockholms län, 762 97, Sverige"
+  },
+  "Vagnsundavägen 318, Stockholm": {
+    "lat": 59.6316559,
+    "lon": 18.880752,
+    "status": "ok",
+    "display_name": "Vagnsundavägen, Yxlö-Edsviken, Norrtälje kommun, Stockholms län, 760 17, Sverige"
+  },
+  "Simpnäsvägen 138, Stockholm": {
+    "lat": 59.8645257,
+    "lon": 19.0337167,
+    "status": "ok",
+    "display_name": "Simpnäsvägen, Dragsviken, Norrtälje kommun, Stockholms län, 764 53, Sverige"
+  },
+  "Gribby byväg 75, Stockholm": {
+    "lat": 59.9934229,
+    "lon": 18.6099822,
+    "status": "ok",
+    "display_name": "Gribby byväg, Gribby, Norrtälje kommun, Stockholms län, 763 43, Sverige"
+  },
+  "Furuhällsplan 1, 196 40 Kungsängen": {
+    "lat": 59.478449,
+    "lon": 17.7513474,
+    "status": "ok",
+    "display_name": "1, Furuhällsplan, Kungsängen, Upplands-Bro kommun, Stockholms län, 196 40, Sverige"
+  },
+  "Kvistabergsvägen 4, 197 91 Bro": {
+    "lat": 59.5016972,
+    "lon": 17.6039506,
+    "status": "ok",
+    "display_name": "4, Kvistabergsvägen, Hammartorp, Bro, Upplands-Bro kommun, Stockholms län, 197 91, Sverige"
+  },
+  "Torget 4, 196 30 Kungsängen": {
+    "lat": 59.4794006,
+    "lon": 17.7484764,
+    "status": "ok",
+    "display_name": "4, Torget, Kungsängen, Upplands-Bro kommun, Stockholms län, 196 30, Sverige"
+  },
+  "Kyrkvägen 22, 169 39 Kungsängen": {
+    "lat": 59.4816949,
+    "lon": 17.742185,
+    "status": "ok",
+    "display_name": "Kungsängens Hembygdsgård, 22, Kyrkvägen, Kungsängen, Upplands-Bro kommun, Stockholms län, 196 30, Sverige"
+  },
+  "Stora Sandhagenvägen 2, 197 36 Bro": {
+    "lat": 59.5125867,
+    "lon": 17.6648175,
+    "status": "ok",
+    "display_name": "2, Stora Sandhagenvägen, Österhagen, Bro, Upplands-Bro kommun, Stockholms län, 197 36, Sverige"
+  },
+  "Prästvägen 8, 197 30 Bro": {
+    "lat": 59.5124448,
+    "lon": 17.6400876,
+    "status": "ok",
+    "display_name": "8, Prästvägen, Finnsta, Bro, Upplands-Bro kommun, Stockholms län, 197 30, Sverige"
+  },
+  "Kyrkbyvägen 23, 197 93 Bro": {
+    "lat": 59.5874778,
+    "lon": 17.662541,
+    "status": "ok",
+    "display_name": "23, Kyrkbyvägen, Ålsta, Håbo-Tibble kyrkby, Upplands-Bro kommun, Stockholms län, 197 92, Sverige"
+  },
+  "Tjusta Skolväg 16, 197 93 Bro": {
+    "lat": 59.599686,
+    "lon": 17.6318261,
+    "status": "ok",
+    "display_name": "16, Tjusta skolväg, Tjusta, Bro, Upplands-Bro kommun, Stockholms län, 197 93, Sverige"
+  },
+  "Sturegatan 12, Stockholm": {
+    "lat": 59.3374639,
+    "lon": 18.0741255,
+    "status": "ok",
+    "display_name": "12, Sturegatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 37, Sverige"
+  },
+  "Pluggvägen 6B, Stockholm": {
+    "lat": 59.2410294,
+    "lon": 18.2272193,
+    "status": "ok",
+    "display_name": "Pluggvägen, Bollmora, Tyresö kommun, Stockholms län, 135 45, Sverige"
+  },
+  "Kyrkvägen 7, Stockholm": {
+    "lat": 59.1224225,
+    "lon": 18.1096887,
+    "status": "ok",
+    "display_name": "Västerhaninge församlingshem, 7, Kyrkvägen, Västerhaninge, Haninge kommun, Stockholms län, 137 41, Sverige"
+  },
+  "Kumla Allé 47, Stockholm": {
+    "lat": 59.2166454,
+    "lon": 18.1924587,
+    "status": "ok",
+    "display_name": "Kumla herrgård, 47, Kumla Allé, Fornudden, Kumla, Tyresö kommun, Stockholms län, 135 52, Sverige"
+  },
+  "Odinsvägen 6, Dalarö": {
+    "lat": 59.1373153,
+    "lon": 18.4144357,
+    "status": "ok",
+    "display_name": "Odinsvägen, Schweizerdalen, Dalarö, Haninge kommun, Stockholms län, 137 71, Sverige"
+  },
+  "Nynäsvägen 208, Stockholm": {
+    "lat": 59.1202237,
+    "lon": 18.1080383,
+    "status": "ok",
+    "display_name": "Västerhaninge Tingshus, 208, Nynäsvägen, Ribbyberg, Västerhaninge, Haninge kommun, Stockholms län, 137 41, Sverige"
+  },
+  "Kyrkgatan 8, Stockholm": {
+    "lat": 59.0096747,
+    "lon": 17.8122643,
+    "status": "ok",
+    "display_name": "Kyrkgatan, Spångbro (fd. Sorunda), Sorunda, Nynäshamns kommun, Stockholms län, 148 70, Sverige"
+  },
+  "Sorunda folkets hus 1, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Svärdsögården 1, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Västerby byväg 1, Stockholm": {
+    "lat": 59.0848425,
+    "lon": 17.9021597,
+    "status": "ok",
+    "display_name": "Västerby byväg, Västerby, Nynäshamns kommun, Stockholms län, Sverige"
+  },
+  "Furugatan 3, Stockholm": {
+    "lat": 59.3607953,
+    "lon": 18.0155867,
+    "status": "ok",
+    "display_name": "Furugatan, Hagalund, Solna, Solna kommun, Stockholms län, 169 66, Sverige"
+  },
+  "Hagalundsgatan 33, Stockholm": {
+    "lat": 59.3615884,
+    "lon": 18.0160286,
+    "status": "ok",
+    "display_name": "Hagalundsgatan, Hagalund, Solna kommun, Stockholms län, 169 67, Sverige"
+  },
+  "Skärgårdsvägen 291, 139 33 Värmdö": {
+    "lat": 59.3262294,
+    "lon": 18.4997991,
+    "status": "ok",
+    "display_name": "Värmdö bygdegård, 291, Skärgårdsvägen, Hemmesta, Värmdö kommun, Stockholms län, 139 33, Sverige"
+  },
+  "GRÄSGATAN 3, Stockholm": {
+    "lat": 59.3069597,
+    "lon": 18.0717097,
+    "status": "ok",
+    "display_name": "3, Gräsgatan, Skanstull, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 60, Sverige"
+  },
+  "LINNÉGATAN 31, Stockholm": {
+    "lat": 59.3370302,
+    "lon": 18.081651,
+    "status": "ok",
+    "display_name": "31, Linnégatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 45, Sverige"
+  },
+  "UPPLANDSGATAN 46, Stockholm": {
+    "lat": 59.3417444,
+    "lon": 18.0496093,
+    "status": "ok",
+    "display_name": "46, Upplandsgatan, Sabbatsberg, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 28, Sverige"
+  },
+  "LÜTZENGATAN 12, Stockholm": {
+    "lat": 59.3381871,
+    "lon": 18.0929896,
+    "status": "ok",
+    "display_name": "12, Lützengatan, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 20, Sverige"
+  },
+  "RAGVALDSGATAN 16, Stockholm": {
+    "lat": 59.3178009,
+    "lon": 18.0685305,
+    "status": "ok",
+    "display_name": "16, Ragvaldsgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 46, Sverige"
+  },
+  "SOLLERÖVÄGEN 33, Stockholm": {
+    "lat": 59.3230937,
+    "lon": 17.9342481,
+    "status": "ok",
+    "display_name": "Sollerövägen, Höglandet, Bromma stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 167 71, Sverige"
+  },
+  "DROTTNINGGATAN 7, Stockholm": {
+    "lat": 59.3292389,
+    "lon": 18.0659346,
+    "status": "ok",
+    "display_name": "7, Drottninggatan, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 52, Sverige"
+  },
+  "STORGATAN 60, Stockholm": {
+    "lat": 59.3323894,
+    "lon": 18.0958884,
+    "status": "ok",
+    "display_name": "60, Storgatan, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 23, Sverige"
+  },
+  "BARNHUSGATAN 8, Stockholm": {
+    "lat": 59.3363409,
+    "lon": 18.0571061,
+    "status": "ok",
+    "display_name": "8, Barnhusgatan, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 23, Sverige"
+  },
+  "ÖSTERLÅNGGATAN 22, Stockholm": {
+    "lat": 59.324137,
+    "lon": 18.0737493,
+    "status": "ok",
+    "display_name": "22, Österlånggatan, Gamla stan, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 31, Sverige"
+  },
+  "ULRIKAGATAN 13, Stockholm": {
+    "lat": 59.3332072,
+    "lon": 18.0965737,
+    "status": "ok",
+    "display_name": "13, Ulrikagatan, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 23, Sverige"
+  },
+  "KOCKSGATAN 52, Stockholm": {
+    "lat": 59.3146798,
+    "lon": 18.0833869,
+    "status": "ok",
+    "display_name": "52, Kocksgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 31, Sverige"
+  },
+  "VÄRTAVÄGEN 16, Stockholm": {
+    "lat": 59.33936,
+    "lon": 18.0937638,
+    "status": "ok",
+    "display_name": "16, Värtavägen, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 24, Sverige"
+  },
+  "FOLKUNGAGATAN 84, Stockholm": {
+    "lat": 59.314863,
+    "lon": 18.0794875,
+    "status": "ok",
+    "display_name": "84, Folkungagatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 22, Sverige"
+  },
+  "BRUNNSGATAN 21, Stockholm": {
+    "lat": 59.3365177,
+    "lon": 18.0666644,
+    "status": "ok",
+    "display_name": "21, Brunnsgatan, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 39, Sverige"
+  },
+  "HAMMARBY SLUSSVÄG 2, Stockholm": {
+    "lat": 59.3038016,
+    "lon": 18.0778812,
+    "status": "ok",
+    "display_name": "Hammarby Slussväg, Skanstull, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 67, Sverige"
+  },
+  "ODENGATAN 4, Stockholm": {
+    "lat": 59.3466363,
+    "lon": 18.0655693,
+    "status": "ok",
+    "display_name": "4, Odengatan, Lärkstaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 24, Sverige"
+  },
+  "NYBOHOVSBACKEN 45, Stockholm": {
+    "lat": 59.3085949,
+    "lon": 18.0166195,
+    "status": "ok",
+    "display_name": "45, Nybohovsbacken, Nybohov, Liljeholmen, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 117 64, Sverige"
+  },
+  "HAGAGATAN 14, Stockholm": {
+    "lat": 59.3451334,
+    "lon": 18.0520188,
+    "status": "ok",
+    "display_name": "14, Hagagatan, Sibirien, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 49, Sverige"
+  },
+  "STAMGATAN 5, Stockholm": {
+    "lat": 59.2832484,
+    "lon": 18.0421799,
+    "status": "ok",
+    "display_name": "Booran Thai Spa Massage, 5, Stamgatan, Östberga, Älvsjö, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 125 74, Sverige"
+  },
+  "RÖDBODTORGET 2, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "BECKOMBERGAVÄGEN 1, Stockholm": {
+    "lat": 59.3427524,
+    "lon": 17.9237225,
+    "status": "ok",
+    "display_name": "Beckombergavägen, Åkeshov, Bromma stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 168 38, Sverige"
+  },
+  "BIRGER JARLSGATAN 67, Stockholm": {
+    "lat": 59.3433462,
+    "lon": 18.0626815,
+    "status": "ok",
+    "display_name": "67, Birger Jarlsgatan, Sibirien, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 56, Sverige"
+  },
+  "ARTILLERIGATAN 40, Stockholm": {
+    "lat": 59.3362274,
+    "lon": 18.0828319,
+    "status": "ok",
+    "display_name": "40, Artillerigatan, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 45, Sverige"
+  },
+  "REGERINGSGATAN 80, Stockholm": {
+    "lat": 59.3377812,
+    "lon": 18.0673701,
+    "status": "ok",
+    "display_name": "80, Regeringsgatan, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 39, Sverige"
+  },
+  "RÖRSTRANDSGATAN 33, Stockholm": {
+    "lat": 59.3405426,
+    "lon": 18.0289004,
+    "status": "ok",
+    "display_name": "33, Rörstrandsgatan, Rörstrand, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 38, Sverige"
+  },
+  "HEDINSGATAN 11, Stockholm": {
+    "lat": 59.342819,
+    "lon": 18.0939186,
+    "status": "ok",
+    "display_name": "11, Hedinsgatan, Gärdeshöjden, Ladugårdsgärdet, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 24, Sverige"
+  },
+  "REGERINGSGATAN 71, Stockholm": {
+    "lat": 59.3357719,
+    "lon": 18.0674827,
+    "status": "ok",
+    "display_name": "71, Regeringsgatan, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 56, Sverige"
+  },
+  "HÄLSINGEGATAN 18, Stockholm": {
+    "lat": 59.3446596,
+    "lon": 18.0407522,
+    "status": "ok",
+    "display_name": "18, Hälsingegatan, Röda bergen, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 31, Sverige"
+  },
+  "HÄGERSTENSVÄGEN 145": {
+    "lat": 59.3054307,
+    "lon": 17.9994786,
+    "status": "ok",
+    "display_name": "145 A-B, Hägerstensvägen, Aspudden, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 126 36, Sverige"
+  },
+  "HÄSTHOLMSVÄGEN 17, Stockholm": {
+    "lat": 59.3127292,
+    "lon": 18.1047587,
+    "status": "ok",
+    "display_name": "17, Hästholmsvägen, Danviksklippan, Södra Hammarbyhamnen, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 44, Sverige"
+  },
+  "TANTOGATAN 75, Stockholm": {
+    "lat": 59.3103301,
+    "lon": 18.0446892,
+    "status": "ok",
+    "display_name": "75, Tantogatan, Zinkensdamm, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 42, Sverige"
+  },
+  "ÖSTERMALMSGATAN 61": {
+    "lat": 59.3415835,
+    "lon": 18.0795329,
+    "status": "ok",
+    "display_name": "61, Östermalmsgatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 43, Sverige"
+  },
+  "KARLAVÄGEN 9, Stockholm": {
+    "lat": 59.3443603,
+    "lon": 18.0653945,
+    "status": "ok",
+    "display_name": "9, Karlavägen, Lärkstaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 24, Sverige"
+  },
+  "NYBROGATAN 34, Stockholm": {
+    "lat": 59.3371277,
+    "lon": 18.0794237,
+    "status": "ok",
+    "display_name": "34, Nybrogatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 102 44, Sverige"
+  },
+  "ÖSTERMALMSGATAN 26": {
+    "lat": 59.3435785,
+    "lon": 18.0697728,
+    "status": "ok",
+    "display_name": "26A, Östermalmsgatan, Lärkstaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 100 41, Sverige"
+  },
+  "HORNSGATAN 73, Stockholm": {
+    "lat": 59.3174949,
+    "lon": 18.0523595,
+    "status": "ok",
+    "display_name": "73, Hornsgatan, Zinkensdamm, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 23, Sverige"
+  },
+  "GREV TUREGATAN 65, Stockholm": {
+    "lat": 59.3411806,
+    "lon": 18.0799684,
+    "status": "ok",
+    "display_name": "65, Grev Turegatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 49, Sverige"
+  },
+  "SMÅLANDSGATAN 7, Stockholm": {
+    "lat": 59.3336656,
+    "lon": 18.0744036,
+    "status": "ok",
+    "display_name": "7, Smålandsgatan, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 46, Sverige"
+  },
+  "SÖDERMALMSTORG 4": {
+    "lat": 59.320341,
+    "lon": 18.0701354,
+    "status": "ok",
+    "display_name": "4, Södermalmstorg, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 46, Sverige"
+  },
+  "GÖTGATAN 63, Stockholm": {
+    "lat": 59.3077531,
+    "lon": 18.0765056,
+    "status": "ok",
+    "display_name": "Götgatan, Skanstull, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 63, Sverige"
+  },
+  "HORNSGATAN 6, Stockholm": {
+    "lat": 59.3198907,
+    "lon": 18.0697014,
+    "status": "ok",
+    "display_name": "6, Hornsgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 46, Sverige"
+  },
+  "STRANDVÄGEN 15, Stockholm": {
+    "lat": 59.3317849,
+    "lon": 18.0828239,
+    "status": "ok",
+    "display_name": "15, Strandvägen, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 23, Sverige"
+  },
+  "FREDSGATAN 12, Stockholm": {
+    "lat": 59.3286831,
+    "lon": 18.0644249,
+    "status": "ok",
+    "display_name": "12, Fredsgatan, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 103 21, Sverige"
+  },
+  "ARTILLERIGATAN 74, Stockholm": {
+    "lat": 59.3428096,
+    "lon": 18.0888748,
+    "status": "ok",
+    "display_name": "74, Artillerigatan, Gärdeshöjden, Ladugårdsgärdet, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 31, Sverige"
+  },
+  "BANÉRGATAN 42, Stockholm": {
+    "lat": 59.3377255,
+    "lon": 18.0957272,
+    "status": "ok",
+    "display_name": "42, Banérgatan, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 27, Sverige"
+  },
+  "Nybrogatan 48, Stockholm": {
+    "lat": 59.3390292,
+    "lon": 18.0809052,
+    "status": "ok",
+    "display_name": "48, Nybrogatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 49, Sverige"
+  },
+  "STAMGATAN 63, Stockholm": {
+    "lat": 59.2862798,
+    "lon": 18.038609,
+    "status": "ok",
+    "display_name": "63, Stamgatan, Östberga, Älvsjö, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 125 74, Sverige"
+  },
+  "SANKT PAULSGATAN 14, Stockholm": {
+    "lat": 59.3181434,
+    "lon": 18.0670639,
+    "status": "ok",
+    "display_name": "Gyllstad, 14, Sankt Paulsgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 47, Sverige"
+  },
+  "KOCKSGATAN 56, Stockholm": {
+    "lat": 59.3148826,
+    "lon": 18.0846822,
+    "status": "ok",
+    "display_name": "56, Kocksgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 30, Sverige"
+  },
+  "ALADDINSVÄGEN 25, Stockholm": {
+    "lat": 59.3222299,
+    "lon": 17.9703649,
+    "status": "ok",
+    "display_name": "25, Aladdinsvägen, Smedslätten, Bromma stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 167 53, Sverige"
+  },
+  "GÄVLEGATAN 10, Stockholm": {
+    "lat": 59.3456136,
+    "lon": 18.0374935,
+    "status": "ok",
+    "display_name": "10, Gävlegatan, Torsplan, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 30, Sverige"
+  },
+  "DALAGATAN 52, Stockholm": {
+    "lat": 59.3420845,
+    "lon": 18.0454098,
+    "status": "ok",
+    "display_name": "52, Dalagatan, Sabbatsberg, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 22, Sverige"
+  },
+  "DÖBELNSGATAN 24 BV, Stockholm": {
+    "lat": 59.3382469,
+    "lon": 18.0637552,
+    "status": "ok",
+    "display_name": "Döbelnsgatan, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 40, Sverige"
+  },
+  "ULRIKAGATAN 13 4TR, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "STUREGATAN 38 LGH 1201, Stockholm": {
+    "lat": 59.3402112,
+    "lon": 18.0763249,
+    "status": "ok",
+    "display_name": "38, Sturegatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 36, Sverige"
+  },
+  "KARLAPLAN 7 5 TR, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "ODENGATAN 106 6TR, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "SANDELSGATAN 42 BV, Stockholm": {
+    "lat": 59.3443175,
+    "lon": 18.091736,
+    "status": "ok",
+    "display_name": "Sandelsgatan, Gärdeshöjden, Ladugårdsgärdet, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 30, Sverige"
+  },
+  "DROTTNINGGATAN 110 1TR LGH 1102, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "RÅDMANSGATAN 7 BV, Stockholm": {
+    "lat": 59.3389612,
+    "lon": 18.053255,
+    "status": "ok",
+    "display_name": "Rådmansgatan, Sabbatsberg, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 60, Sverige"
+  },
+  "VÄRTAVÄGEN 33 3TR, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "HUDIKSVALLSGATAN 8 1TR, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "TULLGRÄND 4 6TR, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "TEGNÉRLUNDEN 4 7TR., Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "LINNÉGATAN 28-30, Stockholm": {
+    "lat": 59.3371283,
+    "lon": 18.0803362,
+    "status": "ok",
+    "display_name": "28-30, Linnégatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 45, Sverige"
+  },
+  "GÖTGATAN 11 3 TR, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "HÅRDVALLSGATAN 34 4TR, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "PETREJUSVÄGEN 51 LGH 1201, Stockholm": {
+    "lat": 59.296602,
+    "lon": 18.1016401,
+    "status": "ok",
+    "display_name": "51, Petrejusvägen, Hammarbyhöjden, Skarpnäcks stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 121 38, Sverige"
+  },
+  "RINGVÄGEN 141 BV, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "FRIHAMNSGATAN 28 Frihamnen Magasin 3, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "ODENGATAN 23 LGH 1402, Stockholm": {
+    "lat": 59.3457425,
+    "lon": 18.0631243,
+    "status": "ok",
+    "display_name": "23, Odengatan, Lärkstaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 24, Sverige"
+  },
+  "SKÅNEGATAN 66 LGH 1101, Stockholm": {
+    "lat": 59.3116372,
+    "lon": 18.0755848,
+    "status": "ok",
+    "display_name": "66, Skånegatan, Skanstull, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 23, Sverige"
+  },
+  "RUSTHÅLLARVÄGEN 99 BV, Stockholm": {
+    "lat": 59.2790197,
+    "lon": 18.1271158,
+    "status": "ok",
+    "display_name": "Rusthållarvägen, Bagarmossen, Skarpnäcks stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 128 41, Sverige"
+  },
+  "RINGVÄGEN 82 LGH 1104, Stockholm": {
+    "lat": 59.3074339,
+    "lon": 18.0690469,
+    "status": "ok",
+    "display_name": "82, Ringvägen, Skanstull, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 60, Sverige"
+  },
+  "BJÖRNGÅRDSGATAN 8 LGH 1002, Stockholm": {
+    "lat": 59.3166458,
+    "lon": 18.0654311,
+    "status": "ok",
+    "display_name": "8, Björngårdsgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 47, Sverige"
+  },
+  "HÖGBERGSGATAN 24 LGH 1104, Stockholm": {
+    "lat": 59.3171346,
+    "lon": 18.0763543,
+    "status": "ok",
+    "display_name": "24, Högbergsgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 25, Sverige"
+  },
+  "BRAHEGATAN 3 LGH 1301, Stockholm": {
+    "lat": 59.3371696,
+    "lon": 18.0753794,
+    "status": "ok",
+    "display_name": "Rosa, 3, Brahegatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 37, Sverige"
+  },
+  "HELENEBORGSGATAN 44 LGH 1301, Stockholm": {
+    "lat": 59.3190165,
+    "lon": 18.0346729,
+    "status": "ok",
+    "display_name": "44, Heleneborgsgatan, Hornstull, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 117 32, Sverige"
+  },
+  "STORA GUNGANS VÄG 2 BV, Stockholm": {
+    "lat": 59.2847688,
+    "lon": 18.0918124,
+    "status": "ok",
+    "display_name": "Stora Gungans väg, Gamla Enskede, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 122 31, Sverige"
+  },
+  "Kyrkhamnsvägen 20, 165 72 Hässelby": {
+    "lat": 59.3886743,
+    "lon": 17.7805271,
+    "status": "ok",
+    "display_name": "Lyckebo Trädgårdscafé, 20, Kyrkhamnsvägen, Lövsta, Hässelby-Vällingby stadsdelsområde, Stockholms kommun, Stockholms län, 165 72, Sverige"
+  },
+  "Ekstigen 1, 167 51 Bromma": {
+    "lat": 59.3324475,
+    "lon": 17.9768943,
+    "status": "ok",
+    "display_name": "Alviks rättarbostad, 1, Ekstigen, Alvik, Bromma stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 167 51, Sverige"
+  },
+  "Vällingby torg 43, 162 65 Vällingby": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Husby gård, 164 30 Kista": {
+    "lat": 59.407209,
+    "lon": 17.9197006,
+    "status": "ok",
+    "display_name": "Husby gård, Husby, Järva stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 164 32, Sverige"
+  },
+  "Jämtlandsgatan 161, 162 60 Vällingby": {
+    "lat": 59.3575976,
+    "lon": 17.8776807,
+    "status": "ok",
+    "display_name": "Jämtlandsgatan, Råcksta, Hässelby-Vällingby stadsdelsområde, Stockholms kommun, Stockholms län, 162 60, Sverige"
+  },
+  "Spetsgatan 2, Stockholm": {
+    "lat": 59.3610244,
+    "lon": 18.0160446,
+    "status": "ok",
+    "display_name": "Olle Olsson Hagalund-museet, 2, Spetsgatan, Hagalund, Solna kommun, Stockholms län, 169 67, Sverige"
+  },
+  "Björnstigen 137B, Stockholm": {
+    "lat": 59.3698924,
+    "lon": 17.8091841,
+    "status": "ok",
+    "display_name": "Björnstigen, Hässelby Villastad, Hässelby-Vällingby stadsdelsområde, Stockholms kommun, Stockholms län, 165 71, Sverige"
+  },
+  "Bergshamra torg 1, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Posthusgatan 2, Stockholm": {
+    "lat": 59.7567763,
+    "lon": 18.7030554,
+    "status": "ok",
+    "display_name": "2, Posthusgatan, Grind, Norrtälje, Norrtälje kommun, Stockholms län, 761 30, Sverige"
+  },
+  "Karby byväg 16, Stockholm": {
+    "lat": 59.8072823,
+    "lon": 18.6202703,
+    "status": "ok",
+    "display_name": "Karby byväg, Karby, Norrtälje kommun, Stockholms län, 761 71, Sverige"
+  },
+  "Torsåker Kvarnbacken, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "NYBROGATAN 3, Stockholm": {
+    "lat": 59.3336578,
+    "lon": 18.0764611,
+    "status": "ok",
+    "display_name": "3, Nybrogatan, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 102 41, Sverige"
+  },
+  "BIRGER JARLSGATAN 14, Stockholm": {
+    "lat": 59.3347827,
+    "lon": 18.0743739,
+    "status": "ok",
+    "display_name": "14, Birger Jarlsgatan, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 35, Sverige"
+  },
+  "KARLAVÄGEN 17, Stockholm": {
+    "lat": 59.3426251,
+    "lon": 18.0690257,
+    "status": "ok",
+    "display_name": "17, Karlavägen, Eriksberg, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 31, Sverige"
+  },
+  "SANKT ERIKSGATAN 79, Stockholm": {
+    "lat": 59.3399923,
+    "lon": 18.0366563,
+    "status": "ok",
+    "display_name": "79, Sankt Eriksgatan, Atlasområdet, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 32, Sverige"
+  },
+  "JAKOBSBERGSGATAN 2, Stockholm": {
+    "lat": 59.3349843,
+    "lon": 18.0730045,
+    "status": "ok",
+    "display_name": "2, Jakobsbergsgatan, Klara, Norrmalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 34, Sverige"
+  },
+  "SIBYLLEGATAN 65, Stockholm": {
+    "lat": 59.3401798,
+    "lon": 18.083159,
+    "status": "ok",
+    "display_name": "65, Sibyllegatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 43, Sverige"
+  },
+  "VALHALLAVÄGEN 78, Stockholm": {
+    "lat": 59.345119,
+    "lon": 18.0718513,
+    "status": "ok",
+    "display_name": "78, Valhallavägen, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 26, Sverige"
+  },
+  "SVEAVÄGEN 82, Stockholm": {
+    "lat": 59.340682,
+    "lon": 18.0590001,
+    "status": "ok",
+    "display_name": "82, Sveavägen, Sibirien, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 59, Sverige"
+  },
+  "BANÉRGATAN 10, Stockholm": {
+    "lat": 59.3342877,
+    "lon": 18.0927227,
+    "status": "ok",
+    "display_name": "10, Banérgatan, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 115 23, Sverige"
+  },
+  "LINNÉGATAN 42, Stockholm": {
+    "lat": 59.3366528,
+    "lon": 18.0826476,
+    "status": "ok",
+    "display_name": "42, Linnégatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 45, Sverige"
+  },
+  "Klockarlötesvägen 24, 136 91 Österhaninge": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Vikingavägen 39, Stockholm": {
+    "lat": 59.4213499,
+    "lon": 17.9705308,
+    "status": "ok",
+    "display_name": "39, Vikingavägen, Edsviken, Tureberg, Sjöberg, Sollentuna kommun, Stockholms län, 191 33, Sverige"
+  },
+  "Förvaltarvägen 53, Stockholm": {
+    "lat": 59.252483,
+    "lon": 18.0756283,
+    "status": "ok",
+    "display_name": "Förvaltarvägen, Yrkesgatsområdet, Hökarängen, Farsta stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 123 54, Sverige"
+  },
+  "Gamla rådhuset, Stockholm": {
+    "lat": 59.1978088,
+    "lon": 17.627225,
+    "status": "ok",
+    "display_name": "Gamla Rådhuset, Köpmangatan, Tälje, Södertälje, Södertälje kommun, Stockholms län, 151 72, Sverige"
+  },
+  "Västra Kanalgatan 8, Stockholm": {
+    "lat": 59.199698,
+    "lon": 17.6274227,
+    "status": "ok",
+    "display_name": "Västra Kanalgatan, Tälje, Södertälje, Södertälje kommun, Stockholms län, 151 72, Sverige"
+  },
+  "Övre Torekällgatan 31, Stockholm": {
+    "lat": 59.1937908,
+    "lon": 17.6204056,
+    "status": "ok",
+    "display_name": "Övre Torekällgatan, Blombacka, Tälje, Södertälje, Södertälje kommun, Stockholms län, 151 21, Sverige"
+  },
+  "Skytteholmsvägen 2, Stockholm": {
+    "lat": 59.3560532,
+    "lon": 18.0001212,
+    "status": "ok",
+    "display_name": "Solna Folkets Hus, 2, Skytteholmsvägen, Skytteholm, Solna kommun, Stockholms län, 171 25, Sverige"
+  },
+  "Fullersta Gårdsväg 18, 141 35 Huddinge": {
+    "lat": 59.2388765,
+    "lon": 17.9748133,
+    "status": "ok",
+    "display_name": "Fullersta gård, 18, Fullersta Gårdsväg, Fullersta, Huddinge, Huddinge kommun, Stockholms län, 141 35, Sverige"
+  },
+  "Alfred Nobels allé 7, 141 52 Huddinge": {
+    "lat": 59.219461,
+    "lon": 17.9430918,
+    "status": "ok",
+    "display_name": "7, Alfred Nobels Allé, Visättra, Flemingsberg, Huddinge, Huddinge kommun, Stockholms län, 141 57, Sverige"
+  },
+  "Galles gränd 7, Stockholm": {
+    "lat": 59.7562641,
+    "lon": 18.6993708,
+    "status": "ok",
+    "display_name": "Galles gränd, Grossgärdet, Grind, Norrtälje, Norrtälje kommun, Stockholms län, 761 30, Sverige"
+  },
+  "Hammarbyvägen 16, Stockholm": {
+    "lat": 59.525553,
+    "lon": 17.9153537,
+    "status": "ok",
+    "display_name": "Eklunds Bowling, 16, Hammarbyvägen, Väsbyskogen, Vilunda, Upplands Väsby, Upplands Väsby kommun, Stockholms län, 194 36, Sverige"
+  },
+  "Löfströmsvägen 8, Stockholm": {
+    "lat": 59.3642539,
+    "lon": 17.9571212,
+    "status": "ok",
+    "display_name": "Dolks Kök Restaurang & Café, 8, Löfströmsvägen, Hästhagen, Duvbo, Sundbybergs kommun, Stockholms län, 172 75, Sverige"
+  },
+  "Poseidons torg 8, 136 46 Handen": {
+    "lat": 59.1672538,
+    "lon": 18.1393391,
+    "status": "ok",
+    "display_name": "Poseidons Torg, Handen, Haninge kommun, Stockholms län, 136 43, Sverige"
+  },
+  "Storgatan 15, Stockholm": {
+    "lat": 59.3536433,
+    "lon": 17.9990342,
+    "status": "ok",
+    "display_name": "15, Storgatan, Västra skogen, Huvudsta, Solna kommun, Stockholms län, 171 63, Sverige"
+  },
+  "Veddestabron 10, Stockholm": {
+    "lat": 59.4079921,
+    "lon": 17.862131,
+    "status": "ok",
+    "display_name": "10, Veddestabron, Barkarbystaden, Barkarby, Järfälla kommun, Sollentuna kommun, Stockholms län, 175 06, Sverige"
+  },
+  "Artipelagstigen 1, 134 40 Gustavsberg": {
+    "lat": 59.3073116,
+    "lon": 18.3558907,
+    "status": "ok",
+    "display_name": "Artipelagstigen, Viktorsberg, Hålludden, Gustavsberg, Värmdö kommun, Stockholms län, 134 52, Sverige"
+  },
+  "Hagalundsgatan 38, Stockholm": {
+    "lat": 59.3615884,
+    "lon": 18.0160286,
+    "status": "ok",
+    "display_name": "Hagalundsgatan, Hagalund, Solna kommun, Stockholms län, 169 67, Sverige"
+  },
+  "Spetsgatan 4, Stockholm": {
+    "lat": 59.3611162,
+    "lon": 18.0163203,
+    "status": "ok",
+    "display_name": "Spetsgatan, Hagalund, Solna kommun, Stockholms län, 169 67, Sverige"
+  },
+  "Elektronvägen 30, 141 49 Huddinge": {
+    "lat": 59.2219596,
+    "lon": 17.9564979,
+    "status": "ok",
+    "display_name": "Elektronvägen, Visättra, Flemingsberg, Huddinge, Huddinge kommun, Stockholms län, 141 49, Sverige"
+  },
+  "Kyrkogårdsvägen 6, 141 62 Huddinge": {
+    "lat": 59.2383379,
+    "lon": 17.9860574,
+    "status": "ok",
+    "display_name": "Tonsalen, 6, Kyrkogårdsvägen, Kvarnbergsplan, Sjödalen, Huddinge, Huddinge kommun, Stockholms län, 141 62, Sverige"
+  },
+  "Sundby Gårdsväg 6, 141 91 Huddinge": {
+    "lat": 59.2005622,
+    "lon": 18.0195925,
+    "status": "ok",
+    "display_name": "Litografiska museet, 6, Sundby gårdsväg, Björklund, Huddinge kommun, Stockholms län, 141 91, Sverige"
+  },
+  "Drottninggatan 5, Stockholm": {
+    "lat": 59.3391214,
+    "lon": 18.0561952,
+    "status": "ok",
+    "display_name": "Drottninggatan, Sabbatsberg, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 111 60, Sverige"
+  },
+  "Knösgårdens väg 6, Stockholm": {
+    "lat": 59.7586823,
+    "lon": 18.9225125,
+    "status": "ok",
+    "display_name": "Knösgårdens väg, Mon, Södersvik, Norrtälje kommun, Stockholms län, 761 94, Sverige"
+  },
+  "Simpnäsvägen 739, Stockholm": {
+    "lat": 59.8645257,
+    "lon": 19.0337167,
+    "status": "ok",
+    "display_name": "Simpnäsvägen, Dragsviken, Norrtälje kommun, Stockholms län, 764 53, Sverige"
+  },
+  "Vegagatan 1, Stockholm": {
+    "lat": 59.3409877,
+    "lon": 18.0513671,
+    "status": "ok",
+    "display_name": "1, Vegagatan, Sabbatsberg, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 30, Sverige"
+  },
+  "Baldersgatan 14, Stockholm": {
+    "lat": 59.3456945,
+    "lon": 18.0691001,
+    "status": "ok",
+    "display_name": "14, Baldersgatan, Lärkstaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 100 41, Sverige"
+  },
+  "Båtvarvsgränd 28, 167 33 Bromma": {
+    "lat": 59.3414596,
+    "lon": 17.9743231,
+    "status": "ok",
+    "display_name": "Stora Båtvarvsgränd, Ulvsunda, Bromma stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 167 36, Sverige"
+  },
+  "Uppköparvägen 7, 120 44 Årsta": {
+    "lat": 59.2942483,
+    "lon": 18.0287232,
+    "status": "ok",
+    "display_name": "7, Uppköparvägen, Årsta Partihallar, Årsta, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 120 44, Sverige"
+  },
+  "Bredholmstorget 4, 127 48 Skärholmen": {
+    "lat": 59.2754551,
+    "lon": 17.9051873,
+    "status": "ok",
+    "display_name": "Bredholmstorget, Skärholmen, Skärholmens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 127 48, Sverige"
+  },
+  "Ormkärrsvägen 78, 124 71 Bandhagen": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Fatbursparken, 118 26 Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Östbergatorget 21, 125 73 Älvsjö": {
+    "lat": 59.2890455,
+    "lon": 18.0335272,
+    "status": "ok",
+    "display_name": "Östbergatorget, Östberga, Älvsjö, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 125 72, Sverige"
+  },
+  "Mårbackagatan 11 hus H 123 43 Farsta": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Västbergavägen 26, 126 30 Hägersten": {
+    "lat": 59.292338,
+    "lon": 18.0085745,
+    "status": "ok",
+    "display_name": "Västbergavägen, Västberga industriområde, Västberga, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 126 30, Sverige"
+  },
+  "Västberga allé 32, 126 30 Hägersten": {
+    "lat": 59.2937429,
+    "lon": 18.0146558,
+    "status": "ok",
+    "display_name": "Västberga Allé, Västberga industriområde, Västberga, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 126 30, Sverige"
+  },
+  "LM Ericssons väg 14, 126 26 Hägersten": {
+    "lat": 59.2997731,
+    "lon": 17.9942096,
+    "status": "ok",
+    "display_name": "Konstfack, 14, LM Ericssons Väg, Midsommarkransen, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 126 26, Sverige"
+  },
+  "Svärdlångsvägen 36, 120 60 Årsta": {
+    "lat": 59.3006871,
+    "lon": 18.033593,
+    "status": "ok",
+    "display_name": "36, Svärdlångsvägen, Årsta, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 120 60, Sverige"
+  },
+  "Norrtullsgatan 45, 113 45 Stockholm": {
+    "lat": 59.3459743,
+    "lon": 18.0475577,
+    "status": "ok",
+    "display_name": "45, Norrtullsgatan, Sabbatsberg, Vasastaden, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 113 27, Sverige"
+  },
+  "Midsommarslingan 1, 126 30 Hägersten": {
+    "lat": 59.3015386,
+    "lon": 18.0189487,
+    "status": "ok",
+    "display_name": "Midsommarslingan, Västberga, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 126 32, Sverige"
+  },
+  "Högerudsbacken 22, 123 73 Farsta": {
+    "lat": 59.2305866,
+    "lon": 18.1019481,
+    "status": "ok",
+    "display_name": "Russtorp, 22, Högerudsbacken, Farsta strand, Farsta stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 123 71, Sverige"
+  },
+  "Glasbruksgatan 25, 116 20 Stockholm": {
+    "lat": 59.3181236,
+    "lon": 18.0787713,
+    "status": "ok",
+    "display_name": "25, Glasbruksgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 25, Sverige"
+  },
+  "Kyrkhamnsvägen 36, 165 72 Hässelby": {
+    "lat": 59.3884304,
+    "lon": 17.7860217,
+    "status": "ok",
+    "display_name": "Kyrkhamnsvägen, Lövsta, Hässelby-Vällingby stadsdelsområde, Stockholms kommun, Stockholms län, 175 56, Sverige"
+  },
+  "Nordmarksvägen 6, 123 72 Farsta": {
+    "lat": 59.2331738,
+    "lon": 18.1057837,
+    "status": "ok",
+    "display_name": "6B, Nordmarksvägen, Farsta, Farsta stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 123 72, Sverige"
+  },
+  "Alstaviksvägen 11, 117 33 Stockholm": {
+    "lat": 59.3210882,
+    "lon": 18.0272194,
+    "status": "ok",
+    "display_name": "11, Alstaviksvägen, Långholmen, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 117 37, Sverige"
+  },
+  "Skarpnäcks gårdsväg 6D, 128 31 Skarpnäck": {
+    "lat": 59.2669554,
+    "lon": 18.143222,
+    "status": "ok",
+    "display_name": "Skarpnäcks Gårdsväg, Bagarmossen, Skarpnäcks stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 128 31, Sverige"
+  },
+  "Sjöviksbacken 60, 117 43 Stockholm": {
+    "lat": 59.3044149,
+    "lon": 18.0292376,
+    "status": "ok",
+    "display_name": "Sjöviksbacken, Liljeholmen, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 117 56, Sverige"
+  },
+  "Årsta gamla skola": {
+    "lat": 59.3022874,
+    "lon": 18.0271194,
+    "status": "ok",
+    "display_name": "Årsta gamla skola, Sjöviksbacken, Liljeholmen, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 117 62, Sverige"
+  },
+  "Vinterviksvägen 61-63, 117 65 Stockholm": {
+    "lat": 59.310961,
+    "lon": 18.0000432,
+    "status": "ok",
+    "display_name": "Vinterviksvägen, Aspudden, Hägersten-Älvsjö stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 117 71, Sverige"
+  },
+  "Fiskargatan 1, 116 20 Stockholm": {
+    "lat": 59.3181303,
+    "lon": 18.0750829,
+    "status": "ok",
+    "display_name": "1A, Fiskargatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 25, Sverige"
+  },
+  "Enskede gårdsväg 14, 120 47 Enskede Gård": {
+    "lat": 59.2880288,
+    "lon": 18.0665362,
+    "status": "ok",
+    "display_name": "14C, Enskede Gårdsväg, Enskede gård, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 122 37, Sverige"
+  },
+  "Enskede Gårdsväg 10, 120 47 Enskede Gård": {
+    "lat": 59.2883061,
+    "lon": 18.0673156,
+    "status": "ok",
+    "display_name": "Enskede Gårdsväg, Enskede gård, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 120 47, Sverige"
+  },
+  "Fjällgatan 23, 116 28 Stockholm": {
+    "lat": 59.3174768,
+    "lon": 18.0839108,
+    "status": "ok",
+    "display_name": "23B, Fjällgatan, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 28, Sverige"
+  },
+  "Nytorget 15B, 116 40 Stockholm": {
+    "lat": 59.3123345,
+    "lon": 18.0835258,
+    "status": "ok",
+    "display_name": "Nytorget, Skanstull, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 40, Sverige"
+  },
+  "Bjurholmsgatan 3, 116 38 Stockholm": {
+    "lat": 59.3087467,
+    "lon": 18.0811617,
+    "status": "ok",
+    "display_name": "Bjurholmsgatan, Skanstull, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 116 61, Sverige"
+  },
+  "Granängsvägen 7, Stockholm": {
+    "lat": 59.3239348,
+    "lon": 18.2453066,
+    "status": "ok",
+    "display_name": "Granängsvägen, Björknäs, Boo, Nacka kommun, Stockholms län, 132 34, Sverige"
+  },
+  "Stadsparken 6, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Handenterminalen 2, 136 40 Handen": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Handens Stationsväg 11, 136 40 Handen": {
+    "lat": 59.1679367,
+    "lon": 18.1354864,
+    "status": "ok",
+    "display_name": "Handens stationsväg, Rudans gård, Handen, Haninge kommun, Stockholms län, 136 81, Sverige"
+  },
+  "Klockarlötsvägen 26, 137 95 Österhaninge": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Kyrkvägen 1, 137 38 Västerhaninge": {
+    "lat": 59.1230009,
+    "lon": 18.1072081,
+    "status": "ok",
+    "display_name": "Kyrkvägen, Västerhaninge, Haninge kommun, Stockholms län, 137 41, Sverige"
+  },
+  "Åkerby 12, Stockholm": {
+    "lat": 58.98353,
+    "lon": 17.8199216,
+    "status": "ok",
+    "display_name": "Åkerby, Nynäshamns kommun, Stockholms län, 148 70, Sverige"
+  },
+  "Åkerby 15, Stockholm": {
+    "lat": 58.98353,
+    "lon": 17.8199216,
+    "status": "ok",
+    "display_name": "Åkerby, Nynäshamns kommun, Stockholms län, 148 70, Sverige"
+  },
+  "Gabrielstorp 112, Stockholm": {
+    "lat": 58.8259417,
+    "lon": 17.8366013,
+    "status": "ok",
+    "display_name": "Gabrielstorp, Nynäshamns kommun, Stockholms län, 149 92, Sverige"
+  },
+  "Gabrielstorp 107, Stockholm": {
+    "lat": 58.8259417,
+    "lon": 17.8366013,
+    "status": "ok",
+    "display_name": "Gabrielstorp, Nynäshamns kommun, Stockholms län, 149 92, Sverige"
+  },
+  "Stenstrand 69, Stockholm": {
+    "lat": 58.8089731,
+    "lon": 17.8232797,
+    "status": "ok",
+    "display_name": "Stenstrand, Almvik, Nynäshamns kommun, Stockholms län, 149 92, Sverige"
+  },
+  "Chamottevägen 6, 134 40 Gustavsberg": {
+    "lat": 59.3235309,
+    "lon": 18.3857706,
+    "status": "ok",
+    "display_name": "Chamottevägen, Charlottendal, Gustavsberg, Värmdö kommun, Stockholms län, 134 52, Sverige"
+  },
+  "Rönningevägen 7, Stockholm": {
+    "lat": 59.1951901,
+    "lon": 17.7466961,
+    "status": "ok",
+    "display_name": "Villa Skönvik, 7, Rönningevägen, Fågelby, Rönninge, Salems kommun, Stockholms län, 144 61, Sverige"
+  },
+  "Sjödalstorget 1, 141 47 Huddinge": {
+    "lat": 59.2357021,
+    "lon": 17.9816118,
+    "status": "ok",
+    "display_name": "Sjödalstorget, Solgård, Fullersta, Huddinge, Huddinge kommun, Stockholms län, 141 47, Sverige"
+  },
+  "Sjödalsvägen 46, 141 46 Huddinge": {
+    "lat": 59.2308893,
+    "lon": 17.9929396,
+    "status": "ok",
+    "display_name": "Huset, 46, Sjödalsvägen, Sörskogen, Sjödalen, Huddinge, Huddinge kommun, Stockholms län, 141 46, Sverige"
+  },
+  "Skolvägen 2, Stockholm": {
+    "lat": 59.4765306,
+    "lon": 17.745402,
+    "status": "ok",
+    "display_name": "2, Skolvägen, Kungsängen, Upplands-Bro kommun, Stockholms län, 196 30, Sverige"
+  },
+  "Gamla Norrtäljevägen 791": {
+    "lat": 59.6868171,
+    "lon": 18.3700151,
+    "status": "ok",
+    "display_name": "Gamla Norrtäljevägen, Hasselbacken, Norrtälje kommun, Stockholms län, 762 93, Sverige"
+  },
+  "Lindholmsvägen 245, Stockholm": {
+    "lat": 59.4616403,
+    "lon": 18.3131651,
+    "status": "ok",
+    "display_name": "Lindholmsvägen, Margretelundsparken, Österskär, Österåkers kommun, Stockholms län, 184 52, Sverige"
+  },
+  "Gymnasievägen 4B, Stockholm": {
+    "lat": 59.2423137,
+    "lon": 17.999197,
+    "status": "ok",
+    "display_name": "Gymnasievägen, Kvarnbergsplan, Sjödalen, Huddinge, Huddinge kommun, Stockholms län, 141 48, Sverige"
+  },
+  "Ekskogenvägen 32, Stockholm": {
+    "lat": 59.6412864,
+    "lon": 18.2260554,
+    "status": "ok",
+    "display_name": "Ekskogenvägen, Västanberga, Ekskogen, Vallentuna kommun, Stockholms län, 186 96, Sverige"
+  },
+  "Sturegatan 10, Stockholm": {
+    "lat": 59.337239,
+    "lon": 18.0739453,
+    "status": "ok",
+    "display_name": "10, Sturegatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 36, Sverige"
+  },
+  "Milstensvägen 52, Stockholm": {
+    "lat": 59.3863896,
+    "lon": 17.9588085,
+    "status": "ok",
+    "display_name": "Milot Aktivitetshuset, 52, Milstensvägen, Lilla Ursvik, Sundbybergs kommun, Stockholms län, 174 46, Sverige"
+  },
+  "Pluggvägen 6 B–C, Stockholm": {
+    "lat": 59.2410294,
+    "lon": 18.2272193,
+    "status": "ok",
+    "display_name": "Pluggvägen, Bollmora, Tyresö kommun, Stockholms län, 135 45, Sverige"
+  },
+  "Handenterminalen 2, plan 10, 136 40 Handen": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Vega Allé 61, Stockholm": {
+    "lat": 59.1852368,
+    "lon": 18.1340279,
+    "status": "ok",
+    "display_name": "61, Vega Allé, Mellanberg, Vega, Haninge kommun, Stockholms län, 136 57, Sverige"
+  },
+  "Runstensvägen 13, Stockholm": {
+    "lat": 59.1718953,
+    "lon": 18.1426759,
+    "status": "ok",
+    "display_name": "13, Runstensvägen, Mellanberg, Handen, Haninge kommun, Stockholms län, 136 38, Sverige"
+  },
+  "Rudansvägen 55, 136 50 Handen": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Jungfruns gata 419, Stockholm": {
+    "lat": 59.1722232,
+    "lon": 18.1685657,
+    "status": "ok",
+    "display_name": "Jungfruns gata, Brandbergen, Handen, Haninge kommun, Stockholms län, 136 60, Sverige"
+  },
+  "Odinsvägen 20, Stockholm": {
+    "lat": 59.1373302,
+    "lon": 18.4145616,
+    "status": "ok",
+    "display_name": "Odinsvägen, Schweizerdalen, Dalarö, Haninge kommun, Stockholms län, 137 71, Sverige"
+  },
+  "Vendelsö Skolväg 124, Stockholm": {
+    "lat": 59.1925898,
+    "lon": 18.1861168,
+    "status": "ok",
+    "display_name": "124, Vendelsö skolväg, Dalen, Söderby, Handen, Haninge kommun, Stockholms län, 136 71, Sverige"
+  },
+  "Södra Jordbrovägen 25, Stockholm": {
+    "lat": 59.1423913,
+    "lon": 18.1289387,
+    "status": "ok",
+    "display_name": "25, Södra Jordbrovägen, Jordbro, Haninge kommun, Stockholms län, 137 64, Sverige"
+  },
+  "Storbygården 3, Stockholm": {
+    "lat": 58.8446526,
+    "lon": 17.8205341,
+    "status": "ok",
+    "display_name": "Storbygården, Nynäshamns kommun, Stockholms län, 149 92, Sverige"
+  },
+  "Villagatan 5, Stockholm": {
+    "lat": 59.3421909,
+    "lon": 18.07298,
+    "status": "ok",
+    "display_name": "5, Villagatan, Villastaden, Östermalm, Norra innerstadens stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 114 32, Sverige"
+  },
+  "Hantverksvägen 2, Stockholm": {
+    "lat": 59.1823562,
+    "lon": 17.5830508,
+    "status": "ok",
+    "display_name": "Hantverksvägen, Hovsjö industriområde, Hovsjö, Södertälje, Södertälje kommun, Stockholms län, 151 65, Sverige"
+  },
+  "Turingevägen 9, Stockholm": {
+    "lat": 59.2715397,
+    "lon": 18.0212498,
+    "status": "ok",
+    "display_name": "Turingevägen, Älvsjö, Enskede-Årsta-Vantörs stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 125 43, Sverige"
+  },
+  "Engelbrektsvägen 47, Stockholm": {
+    "lat": 59.5375953,
+    "lon": 18.0928498,
+    "status": "ok",
+    "display_name": "47-51, Engelbrektsvägen, Ormsta, Vallentuna, Vallentuna kommun, Stockholms län, 186 46, Sverige"
+  },
+  "Wilhelm Boys väg 21, Stockholm": {
+    "lat": 59.4726565,
+    "lon": 17.806717,
+    "status": "ok",
+    "display_name": "21, Wilhelm Boys väg, Kolarängen, Nyboda, Stäket, Järfälla kommun, Stockholms län, 176 75, Sverige"
+  },
+  "Ulvsättra gård, Stockholm": {
+    "lat": null,
+    "lon": null,
+    "status": "not_found",
+    "display_name": null
+  },
+  "Länsväg 694, 130 43 Möja": {
+    "lat": 59.4083315,
+    "lon": 18.886452,
+    "status": "ok",
+    "display_name": "SAT Möja, Länsväg 694, Källa strand, Berg, Värmdö kommun, Stockholms län, 130 43, Sverige"
+  },
+  "Blekängsvägen 14, Gustavsberg": {
+    "lat": 59.3281493,
+    "lon": 18.392444,
+    "status": "ok",
+    "display_name": "Blekängsvägen, Gustavsbergs centrum, Gustavsberg, Värmdö kommun, Stockholms län, 134 30, Sverige"
+  }
+}

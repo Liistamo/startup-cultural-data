@@ -1,0 +1,79 @@
+STARTUP – Sources, Methods and Web Map (with references)
+============================================================
+
+Collection of official data on administrative boundaries in Europe
+------------------------------------------------------------------
+For the cartographic component of the project, open data provided by official public authorities were accessed through their respective APIs.
+
+Eurostat, the statistical office of the European Union, is responsible for collecting and disseminating statistical and geographical information across all member states. Through its GISCO service and associated API, harmonized data at the municipal (LAU) level are made available for the entirety of Europe. These datasets constitute the source of the municipal boundaries used for most of the cities included in this study (Eurostat GISCO, 2024). [1]
+
+Etalab, the French governmental body in charge of open data policy, provides national datasets, accessible via open data APIs, including the delineation of inter-municipal structures (EPCI). From this source, the boundary of the Eurométropole de Strasbourg—an inter-municipal entity composed of several municipalities—has been retrieved (Etalab, 2024). [2]
+
+For the Ruhr area in Germany, three municipalities (Dortmund, Bochum, and Gelsenkirchen) have been aggregated into a single spatial unit. In this way, the project establishes a consistent and comparable set of boundaries across the selected case studies, enabling cross-national spatial analysis.
+
+
+Processing and integration of cultural place data
+-------------------------------------------------
+For the analysis of cultural infrastructures, open geospatial data were combined and processed through reproducible workflows.
+
+City boundaries were first collected from official sources (Eurostat GISCO and Etalab, see above) and stored as individual GeoJSON files. These boundary files serve as the spatial framework for subsequent analysis.
+
+Information on cultural places was then retrieved from the Overture Maps Foundation, which publishes global, openly licensed geospatial datasets. Using Overture’s API-accessible Parquet files for the “places” theme, a wide set of categories relevant to arts, culture, and creative production were selected. [3]
+
+The datasets were processed in DuckDB, where spatial extensions enabled filtering and joining. Each cultural place record was spatially matched with its corresponding city boundary using geometric operations. The resulting data were exported in GeoJSON format for cartographic visualization, alongside CSV summary tables reporting counts of places per city and per category. [4]
+
+Through this pipeline, disparate data sources are integrated into a consistent and comparable dataset. The combination of API-based data access, standardized formats (GeoJSON, Parquet, CSV), and transparent processing steps ensures both reproducibility and adaptability for further research use.
+
+
+Cartographic visualization in the project interface (website)
+-------------------------------------------------------------
+The cartographic interface is implemented as a full-screen web map using Leaflet. Basemap tiles are served by OpenStreetMap, while study geometries are loaded as local GeoJSON assets: (i) city or metropolitan boundaries (one file per city/region) rendered as outline layers, and (ii) a consolidated point-based dataset of cultural places exported from the processing pipeline (“cultural_places_*.geojson”). [5][6]
+
+Interaction is client-side and lightweight. Users can: (a) filter points by category and/or city, (b) zoom to a selected city (boundary-aware fit), and (c) inspect individual features via pop-ups (name, category, website, city). A compact legend reflects the category color scheme used in the exported GeoJSON. For downstream use, the filtered selection can be exported directly from the browser to CSV or XLSX (via SheetJS), preserving name, category, website and coordinates. All logic—filtering, symbolization, and export—runs in the browser without server-side state, ensuring a reproducible, portable visualization layer that can be updated simply by replacing the input GeoJSON files. [7][8]
+
+
+References
+----------
+[1] Eurostat / GISCO – LAU (Local Administrative Units) 2024, 1:1M, WGS84. 
+    Landing page & API: https://gisco-services.ec.europa.eu/distribution/v2/lau/ 
+    Direct GeoJSON index: https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/
+
+[2] Etalab (French government) – EPCI boundaries (2024). 
+    Open data portal: https://www.data.gouv.fr/ 
+    Example dataset (GeoJSON): 
+    https://etalab-datasets.geo.data.gouv.fr/contours-administratifs/2024/geojson/epci-100m.geojson
+    (Alternate 50m generalization used in some runs: 
+    https://etalab-datasets.geo.data.gouv.fr/contours-administratifs/2024/geojson/epci-50m.geojson )
+
+[3] Overture Maps Foundation – Places theme (Parquet). 
+    Documentation: https://docs.overturemaps.org/ 
+    Data access (example S3 path): s3://overturemaps-us-west-2/release/YYYY-MM-DD.0/theme=places/type=place/*.parquet
+
+[4] DuckDB – Analytical database with Spatial and HTTPFS extensions. 
+    Project: https://duckdb.org/ 
+    Spatial extension docs: https://duckdb.org/docs/extensions/spatial 
+    HTTPFS extension docs (S3/HTTPS I/O): https://duckdb.org/docs/extensions/httpfs
+
+[5] Leaflet – open-source JavaScript library for web maps. 
+    Homepage & API docs: https://leafletjs.com/
+
+[6] OpenStreetMap – basemap tiles (OSM Standard). 
+    Tile server: https://tile.openstreetmap.org/{z}/{x}/{y}.png 
+    Usage policy: https://operations.osmfoundation.org/policies/tiles/
+
+[7] SheetJS (xlsx) – client-side spreadsheet export (XLSX). 
+    Project: https://sheetjs.com/ 
+    CDN (example): https://cdn.jsdelivr.net/npm/xlsx@0.20.3/dist/xlsx.full.min.js
+
+[8] html2canvas – client-side HTML→PNG renderer (optional for screenshots). 
+    Project: https://html2canvas.hertzen.com/ 
+    CDN (example): https://unpkg.com/html2canvas@1.4.1/dist/html2canvas.min.js
+
+
+Attribution and licensing notes
+-------------------------------
+• Eurostat / GISCO LAU: public data; see Eurostat re-use policy.
+• Etalab EPCI: French open data; see data.gouv.fr licensing (Etalab Open License / ODbL depending on dataset).
+• Overture Maps: data under Overture Data Terms (see project site).
+• OpenStreetMap tiles: abide by OSMF tile usage policy; for production, consider your own tile hosting.
+• Leaflet, SheetJS, html2canvas, DuckDB: see respective open-source licenses on project pages.

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STARTUP – Cultural Places Map</title>
+
+  <!-- Leaflet core CSS & JS (1.9.4). Kept via CDN for a zero-build, static-friendly setup. -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Turf is optional; left in case we later add client-side spatial ops (buffer, intersect, etc.). -->
+  <script defer src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+
+  <style>
+    /* Full-viewport map canvas. We keep a minimal custom UI on top. */
+    html, body { height:100%; margin:0; }
+    #map { height: 100vh; }
+
+    /* Small control stack in the top-right corner (Filters + City selector). */
+    #controlsTopRight {
+      position: absolute; top: 4px; right: 4px; z-index: 1101;
+      display: flex; flex-direction: column; gap: 5px;
+    }
+    #togglePanelBtn, #citySelector, #toggleAllBtn, #exportXlsxBtn, #screenshotBtn {
+      padding: 2px; background: #fff; border: 1px solid #aaa; cursor: pointer;
+    }
+    #citySelector { font-weight: normal; }
+
+    /* Sliding panel for categories, legend and export buttons. Hidden by default. */
+    #panel {
+      position: absolute; top: 75px; right: 10px; width: 250px; max-height: calc(100% - 80px);
+      background: #fff; border: 1px solid #aaa; padding: 10px; font-family: sans-serif; font-size: 14px;
+      z-index: 1000; display: none; overflow-y: auto;
+    }
+
+    /* Legend collapse/expand UI */
+    #legend { margin-top: 10px; display: none; border-top: 1px solid #ccc; padding-top: 10px; }
+    #legendToggle { cursor: pointer; font-size: 18px; float: right; line-height: 1; }
+
+    /* Simple “Loading” badge that overlays the map during async fetches. */
+    #loadingBadge {
+      position: absolute; left: 6px; top: 6px; z-index: 1200;
+      background: #111; color: #fff; font: 12px/1.3 monospace;
+      padding: 4px 6px; border-radius: 6px; opacity: .9; display:none;
+    }
+
+    /* Ensure Leaflet’s built-in controls sit above our UI. */
+    .leaflet-top, .leaflet-bottom { z-index: 1201; }
+
+    /* Bottom-right control cluster (scale bar + custom north arrow). */
+    .leaflet-bottom.leaflet-right {
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+      align-items: flex-end;
+      margin: 0 8px 8px 0;
+    }
+
+    /* Scale bar look-and-feel. */
+    .leaflet-bottom .leaflet-control-scale { margin-bottom: 0; }
+    .leaflet-control-scale {
+      font-family: sans-serif;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      padding: 2px 4px;
+      height: auto;
+    }
+
+    /* North arrow control. Pure CSS; no image assets required. */
+    .north-arrow.leaflet-bar {
+      background: rgba(255,255,255,.95);
+      border: 1px solid #aaa;
+      border-radius: 6px;
+      width: 32px; height: 32px;
+      display: flex;
+      align-items: flex-end;   /* “N” sits visually at the bottom inside the box */
+      justify-content: center;
+      font: 700 13px/1 sans-serif;
+      user-select: none;
+      position: relative;
+      box-shadow: 0 1px 3px rgba(0,0,0,.15);
+      margin-bottom: 0;
+    }
+    .north-arrow.leaflet-bar::before {
+      content: "";
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0; height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 10px solid #d00; /* triangle pointing up = north */
+      z-index: 2;
+    }
+
+    /* Optional scale/ratio box (not currently shown, but kept for future use). */
+    .scale-ratio {
+      background: rgba(255,255,255,0.95);
+      border: 1px solid #aaa;
+      border-radius: 6px;
+      padding: 4px 6px;
+      font: 12px/1.3 monospace;
+      box-shadow: 0 1px 3px rgba(0,0,0,.15);
+      user-select: none;
+    }
+    
+    /* Tiny nudge so logo aligns nicer with attribution. */
+    .startup-logo { margin-bottom: -4px; }
+  </style>
+</head>
+<body>
+
+<!-- Top-right controls: city selector + open/close filters panel. -->
+<div id="controlsTopRight">
+  <select id="citySelector"><option value="All">All cities</option></select>
+  <button id="togglePanelBtn">Filters</button>
+</div>
+
+<!-- Filters/Legend/Export panel. The XLSX button loads SheetJS on demand. -->
+<div id="panel">
+  <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
+    <button id="toggleAllBtn" title="Toggle all categories">Clear all</button>
+    <button id="exportXlsxBtn" style="margin-left:auto;">Excel</button>
+    <!-- Screenshot button is wired and functional but hidden by default. -->
+    <button id="screenshotBtn" style="display:none;visibility:hidden;width:0;height:0;padding:0;border:0;">Screenshot</button>
+    <!-- CSV export is accessible via code; button hidden to keep UI clean. -->
+    <button id="exportCsvBtn" style="display:none;visibility:hidden;width:0;height:0;padding:0;border:0;"></button>
+  </div>
+  <div id="categoriesList"></div>
+  <div id="legendToggle" title="Show legend" style="margin-top: 10px;">❓</div>
+  <div id="legend"></div>
+</div>
+
+<!-- Minimal loading indicator for async fetches (boundaries + data). -->
+<div id="loadingBadge">Loading…</div>
+
+<!-- Leaflet map container. -->
+<div id="map"></div>
+
+<script>
+/* ============================
+   Utility helpers (no frameworks)
+   ============================ */
+
+/**
+ * Dynamically append a <script> tag; resolves when loaded.
+ * We use this to lazy-load heavy libraries (SheetJS, html2canvas).
+ */
+function loadScript(url){
+  return new Promise(function(res, rej){
+    var s=document.createElement('script');
+    s.src=url; s.onload=res; s.onerror=function(){ rej(new Error('Failed '+url)); };
+    document.head.appendChild(s);
+  });
+}
+
+/**
+ * Ensure SheetJS is present (XLSX export). Defaults to CDN so this page stays static-friendly.
+ * If you prefer a local file, replace the URL (or preload it in the theme).
+ */
+async function ensureSheetJS(){
+  if (window.XLSX) return;
+  // Zero-dependency path (CDN); change to local path if needed.
+  await loadScript("https://cdn.jsdelivr.net/npm/xlsx@0.20.3/dist/xlsx.full.min.js");
+  if (!window.XLSX) throw new Error('XLSX not available');
+}
+
+/** Ensure html2canvas exists for screenshot capture (button is hidden by default). */
+async function ensureHtml2Canvas(){
+  if (window.html2canvas) return;
+  await loadScript("https://unpkg.com/html2canvas@1.4.1/dist/html2canvas.min.js");
+  if (!window.html2canvas) throw new Error('html2canvas not available');
+}
+
+/** Normalize strings: unify Unicode dashes, strip accents, lower-case. Helps with city aliases. */
+function norm(s){
+  s = (s || "");
+  s = s.replace(/[–—−]/g, '-');
+  s = s.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  return s.toLowerCase().trim();
+}
+
+/** HTML-escape a string for safe innerHTML usage. */
+function esc(s){
+  return String(s||"").replace(/[&<>"']/g, function(m){
+    var map = {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"\'":'&#39;'};
+    return map[m];
+  });
+}
+
+/** Bust caches by appending a timestamp query param. */
+function noCacheUrl(u){ return u + (u.indexOf('?')>=0 ? '&' : '?') + 'v=' + Date.now(); }
+
+/** Simple fetch wrappers with cache-busting. */
+function fetchText(url){ return fetch(noCacheUrl(url), {cache:'no-store'}).then(function(r){ return r.text(); }); }
+function fetchJSON(url){ return fetch(noCacheUrl(url), {cache:'no-store'}).then(function(r){ return r.json(); }); }
+
+/**
+ * Parse a Python http.server directory index.
+ * This assumes you serve the project root (so /geojson/ and /geojson/boundaries/ are browsable).
+ * Returns absolute URLs to files under that directory.
+ */
+async function listDirectory(url){
+  try {
+    const html = await fetchText(url);
+    const div = document.createElement('div');
+    div.innerHTML = html;
+    const links = Array.from(div.querySelectorAll('a'))
+      .map(a => a.getAttribute('href'))
+      .filter(href => href && href !== '../')
+      .map(href => {
+        // Resolve to absolute path under the directory URL (works both locally and on a server).
+        try { return new URL(href, url).toString(); } catch(e){ return null; }
+      })
+      .filter(Boolean);
+    return links;
+  } catch (e) {
+    console.error('Failed to list directory', url, e);
+    return [];
+  }
+}
+
+/** Extract just the filename from a URL (decodeURIComponent handles spaces/diacritics). */
+function filenameFromUrl(u){
+  try { return decodeURIComponent(u.split('/').filter(Boolean).pop()); }
+  catch(e){ return u; }
+}
+
+/* ============================
+   Boundary discovery & naming
+   ============================ */
+
+/**
+ * Derive a human display name from a slug in filenames like:
+ *   "<slug>_boundary_YYYY-MM-DD_HH-MM-SS.geojson"
+ * Uses explicit overrides for certain locales/diacritics; otherwise Title-Cases the slug.
+ */
+function displayNameFromSlug(slug){
+  const overrides = {
+    'eurometropole_strasbourg': 'Eurométropole de Strasbourg',
+    'eurométropole_de_strasbourg': 'Eurométropole de Strasbourg',
+    'dortmund_bochum_gelsenkirchen': 'Ruhr (Dortmund – Bochum – Gelsenkirchen)',
+    'trenčín': 'Trenčín', 'trencin': 'Trenčín', 'trenčin': 'Trenčín',
+    'gdańsk': 'Gdańsk', 'gdansk': 'Gdańsk'
+  };
+  if (overrides[slug]) return overrides[slug];
+  return slug.replace(/_/g,' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+/**
+ * Normalize common city names/variants to a canonical label used in the UI.
+ * This improves the “City” selector UX and ensures boundary-to-point matching.
+ */
+function canonicalCity(name){
+  const aliasMap = {
+    "eurometropole de strasbourg": "Eurométropole de Strasbourg",
+    "eurometropole strasbourg": "Eurométropole de Strasbourg",
+    "eurométropole de strasbourg": "Eurométropole de Strasbourg",
+    "strasbourg": "Eurométropole de Strasbourg",
+    "ruhr": "Ruhr (Dortmund – Bochum – Gelsenkirchen)",
+    "ruhr area": "Ruhr (Dortmund – Bochum – Gelsenkirchen)",
+    "ruhrgebiet": "Ruhr (Dortmund – Bochum – Gelsenkirchen)",
+    "dortmund bochum gelsenkirchen": "Ruhr (Dortmund – Bochum – Gelsenkirchen)",
+    "dortmund – bochum – gelsenkirchen": "Ruhr (Dortmund – Bochum – Gelsenkirchen)",
+    "trencin": "Trenčín", "trenčin": "Trenčín", "trenčín": "Trenčín",
+    "gdansk": "Gdańsk", "gdańsk": "Gdańsk"
+  };
+  const k = norm(name);
+  return aliasMap[k] || name;
+}
+
+/**
+ * Find the latest boundary file per <slug> (based on timestamp in filename).
+ * Returns a map: displayName -> fileURL.
+ */
+async function discoverBoundaries(){
+  const dir = 'geojson/boundaries/';
+  const links = await listDirectory(dir);
+  // Only keep files following the expected pattern.
+  const files = links.filter(u => /_boundary_.*\.geojson$/i.test(u));
+
+  // Group by slug (text before "_boundary_") and keep the lexicographically latest timestamp.
+  const latestBySlug = {};
+  files.forEach(u => {
+    const fname = filenameFromUrl(u);
+    const m = fname.match(/^(.*?)_boundary_(\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2})\.geojson$/i);
+    if (!m) return;
+    const slug = m[1];
+    const ts = m[2];
+    if (!latestBySlug[slug] || ts > latestBySlug[slug].ts) {
+      latestBySlug[slug] = { url: u, ts };
+    }
+  });
+
+  // Convert slug keys to human-readable display names.
+  const boundaryMap = {};
+  Object.keys(latestBySlug).forEach(slug => {
+    boundaryMap[displayNameFromSlug(slug)] = latestBySlug[slug].url;
+  });
+  return boundaryMap;
+}
+
+/**
+ * Pick the newest clean points file by timestamp in filename:
+ *   clean_cultural_places_YYYY-MM-DD_HH-MM-SS.geojson
+ */
+async function discoverLatestCleanGeoJSON(){
+  const dir = 'geojson/';
+  const links = await listDirectory(dir);
+  const files = links.filter(u => /clean_cultural_places_\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2}\.geojson$/i.test(u));
+  if (!files.length) return null;
+  // Lexicographic sort works because timestamps are zero-padded (YYYY-MM-DD_HH-MM-SS).
+  files.sort((a,b) => filenameFromUrl(b).localeCompare(filenameFromUrl(a)));
+  return files[0];
+}
+
+/* ============================
+   Lightweight UI state helpers
+   ============================ */
+
+/** Tiny “loading” overlay toggler. */
+var loading = document.getElementById('loadingBadge');
+function showLoading(on){ loading.style.display = on ? 'block' : 'none'; }
+
+/* ============================
+   Leaflet map bootstrapping
+   ============================ */
+
+var map = L.map('map', {
+  // More granular zoom steps for nicer UX on trackpads/wheels.
+  zoomSnap: 0.25,
+  zoomDelta: 0.25,
+  wheelPxPerZoomLevel: 120,
+  scrollWheelZoom: true,
+  zoomAnimation: true
+}).setView([51, 10], 4);
+
+/* Basemap: OSM standard tiles (no API keys required). */
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap',
+  crossOrigin: true
+}).addTo(map);
+
+/* Bottom-right scale bar. */
+L.control.scale({ position: 'bottomright', metric: true, imperial: false }).addTo(map);
+
+/* Simple north arrow (vector-only). */
+var NorthCtrl = L.Control.extend({
+  options: { position: 'bottomright' },
+  onAdd: function () {
+    var div = L.DomUtil.create('div', 'leaflet-control leaflet-bar north-arrow');
+    div.title = 'North';
+    div.innerHTML = 'N';
+    L.DomEvent.disableClickPropagation(div);
+    return div;
+  }
+});
+map.addControl(new NorthCtrl());
+
+/**
+ * STARTUP branding in bottom-left. If the image is missing, the link still shows.
+ * Place logo at ./images/startup-logo-square.png (relative to index.html).
+ */
+const startupLogo = L.control({ position: 'bottomleft' });
+startupLogo.onAdd = function (map) {
+  const div = L.DomUtil.create('div', 'startup-logo');
+  div.innerHTML = `
+    <div style="display:flex;align-items:center;gap:6px;background:#fff;padding:2px 4px;margin-bottom:0;">
+      <img src="images/startup-logo-square.png" alt="STARTUP" style="height:13px;width:auto;" onerror="this.style.display='none'">
+      <a href="https://www.horizon-startup.eu" target="_blank" style="color:#003366;text-decoration:none;font-size:12px;line-height:1;">
+        www.horizon-startup.eu
+      </a>
+    </div>`;
+  return div;
+};
+startupLogo.addTo(map);
+
+/* Runtime state for boundaries and points */
+var geoLayer, allData;
+var boundaryLayers = {}; // displayName -> Leaflet layer
+var boundaryStyle = { color: '#007BFF', weight: 3, opacity: 1, fill: false };
+
+/** Render or replace a city boundary as a styled GeoJSON layer. */
+function renderCityBoundary(city, geojson) {
+  if (boundaryLayers[city]) map.removeLayer(boundaryLayers[city]);
+  boundaryLayers[city] = L.geoJSON(geojson, { style: boundaryStyle }).addTo(map);
+}
+
+/** Zoom to a selected city boundary if available. Falls back to current view otherwise. */
+function zoomToCity(city) {
+  if (city === "All") return;
+  var canonical = canonicalCity(city);
+  var canonicalKey = norm(canonical);
+
+  var layer = boundaryLayers[canonical] ||
+    boundaryLayers[Object.keys(boundaryLayers).find(function(k){ return norm(k) === canonicalKey; })];
+
+  if (layer) {
+    var b = layer.getBounds();
+    if (b && b.isValid()) map.fitBounds(b, { padding: [30,30] });
+  }
+}
+
+/* ============================
+   Points (FeatureCollection) rendering
+   ============================ */
+
+/**
+ * Render a filtered subset of features into a single Leaflet layer:
+ * - Category filter (checkboxes)
+ * - City filter (dropdown)
+ * Points are styled by their assigned color (provided by backend script).
+ */
+function renderFeatures(data, selectedCategories, selectedCity) {
+  var selectedCanonical = canonicalCity(selectedCity);
+
+  var filtered = data.features.filter(function(f){
+    var p = f.properties || {};
+    var fCityCanonical = canonicalCity(p.city || "");
+    return selectedCategories.indexOf(p.category) !== -1 &&
+           (selectedCanonical === "All" || norm(fCityCanonical) === norm(selectedCanonical));
+  });
+
+  if (geoLayer) map.removeLayer(geoLayer);
+  geoLayer = L.geoJSON({ type: "FeatureCollection", features: filtered }, {
+    pointToLayer: function (feature, latlng) {
+      var p = feature.properties || {};
+      var color = p.color || 'gray';
+      return L.circleMarker(latlng, { radius:8, fillColor:color, color:color, weight:1, opacity:1, fillOpacity:0.6 });
+    },
+    onEachFeature: function (feature, layer) {
+      var p = feature.properties || {};
+      // “No website” matches the string set by the backend if a site is missing.
+      var url = (p.website && p.website !== 'No website') ? String(p.website) : '';
+      var html = "<b>" + esc(p.name || 'No name') + "</b><br>" +
+                 "City: " + esc(p.city || '-') + "<br>" +
+                 "Category: " + esc(p.category || '-') ;
+      if (url) html += "<br>Website: <a href=\"" + esc(url) + "\" target=\"_blank\" rel=\"noopener noreferrer\">" + esc(url) + "</a>";
+      layer.bindPopup(html);
+    }
+  }).addTo(map);
+
+  // Smart fit: zoom to city boundary if selected, otherwise to the point cloud.
+  if (selectedCity !== "All") {
+    zoomToCity(selectedCity);
+  } else if (filtered.length) {
+    var b = geoLayer.getBounds();
+    if (b && b.isValid()) map.fitBounds(b, { padding:[30,30] });
+  }
+}
+
+/* ============================
+   Filters & Legend UI
+   ============================ */
+
+/**
+ * Build the category checkboxes and city selector from the data itself.
+ * Categories are sorted with “Startup*” at the end for readability.
+ * City names are normalized with alias mapping for consistent UX.
+ */
+function setupUI(data) {
+  // Unique categories present in the data.
+  var allCats = Array.from(
+    new Set(
+      data.features
+        .map(function (f) { return (f.properties || {}).category; })
+        .filter(Boolean)
+    )
+  );
+
+  // Sort: non-Startup first, then Startup*, alphabetical (sv locale).
+  allCats.sort(function (a, b) {
+    var aTrim = String(a || "").trim();
+    var bTrim = String(b || "").trim();
+    var aStartup = /^startup\b/i.test(aTrim);
+    var bStartup = /^startup\b/i.test(bTrim);
+
+    if (aStartup && !bStartup) return 1;
+    if (!aStartup && bStartup) return -1;
+    return aTrim.localeCompare(bTrim, 'sv', { sensitivity: 'base' });
+  });
+
+  // Cities deduplication + canonicalization.
+  var citiesInDataRaw = Array.from(new Set(
+    data.features.map(function(f){ return (f.properties||{}).city; }).filter(Boolean)
+  ));
+  var citiesInData = citiesInDataRaw.map(canonicalCity);
+
+  var citySeen = new Set();
+  var cities = [];
+  citiesInData.forEach(function(name){
+    var display = canonicalCity(name);
+    var key = norm(display);
+    if (!citySeen.has(key)) { citySeen.add(key); cities.push(display); }
+  });
+  cities.sort(function(a,b){ return a.localeCompare(b, 'sv', { sensitivity:'base' }); });
+
+  // Map category -> color (used in legend).
+  var catColors = {};
+  data.features.forEach(function(f){ var p=f.properties||{}; catColors[p.category] = p.color; });
+
+  // Bind to DOM nodes.
+  var catList = document.getElementById('categoriesList');
+  var citySelector = document.getElementById('citySelector');
+  var toggleAllBtn = document.getElementById('toggleAllBtn');
+
+  // Reset UI containers.
+  catList.innerHTML = '';
+  citySelector.innerHTML = '<option value="All">All cities</option>';
+
+  // Populate city selector.
+  cities.forEach(function(city){
+    var opt = document.createElement('option');
+    opt.value = city; opt.textContent = city; citySelector.appendChild(opt);
+  });
+
+  // One checkbox per category (initially all checked).
+  allCats.forEach(function(cat){
+    var label = document.createElement('label');
+    label.innerHTML = '<input type="checkbox" value="' + esc(cat) + '" checked> ' + esc(cat);
+    catList.appendChild(label);
+    catList.appendChild(document.createElement('br'));
+  });
+
+  // Legend mirrors the sorted categories with colored bullets.
+  var legend = document.getElementById('legend');
+  var legendParts = [];
+  allCats.forEach(function(c){
+    var col = catColors[c] || 'gray';
+    legendParts.push('<span style="color:' + esc(col) + '">●</span> ' + esc(c));
+  });
+  legend.innerHTML = '<strong>Legend:</strong><br>' + legendParts.join('<br>');
+
+  // Debounce to avoid re-rendering too often while toggling many boxes quickly.
+  function debounce(fn, wait){
+    var t=null;
+    return function(){ clearTimeout(t); t=setTimeout(fn.bind(this), wait); };
+  }
+  var updateMap = debounce(function(){
+    var selected = Array.from(document.querySelectorAll('#categoriesList input[type=checkbox]'))
+      .filter(function(c){ return c.checked; })
+      .map(function(c){ return c.value; });
+    var selectedCity = citySelector.value;
+    renderFeatures(allData, selected, selectedCity);
+  }, 120);
+
+  // Toggle-all: flips between “all on” and “all off”.
+  var allSelected = true;
+  toggleAllBtn.addEventListener('click', function(){
+    var checkboxes = document.querySelectorAll('#categoriesList input[type=checkbox]');
+    allSelected = !allSelected;
+    Array.prototype.forEach.call(checkboxes, function(cb){ cb.checked = allSelected; });
+    toggleAllBtn.textContent = allSelected ? 'Clear all' : 'Select all';
+    updateMap();
+  });
+
+  // Wire UI events.
+  catList.addEventListener('change', function(e){
+    if (e.target && e.target.matches && e.target.matches('input[type=checkbox]')) updateMap();
+  });
+  citySelector.addEventListener('change', updateMap);
+
+  // Initial render with all categories and “All cities”.
+  updateMap();
+}
+
+/* ============================
+   Data export helpers (CSV/XLSX)
+   ============================ */
+
+/**
+ * Produce the currently filtered features sorted by name (sv locale).
+ * This is used by both CSV and XLSX exporters.
+ */
+function getFilteredSortedFeatures() {
+  var selectedCategories = Array.from(document.querySelectorAll('#categoriesList input[type=checkbox]'))
+    .filter(function(c){ return c.checked; }).map(function(c){ return c.value; });
+  var selectedCityRaw = document.getElementById('citySelector').value;
+  var selectedCity = canonicalCity(selectedCityRaw);
+
+  var filtered = allData.features.filter(function(f){
+    var p = f.properties || {};
+    var fCity = canonicalCity(p.city || "");
+    return selectedCategories.indexOf(p.category)!==-1 &&
+           (selectedCity === "All" || norm(fCity) === norm(selectedCity));
+  });
+
+  filtered.sort(function(a,b){
+    var an = String((a.properties||{}).name || '');
+    var bn = String((b.properties||{}).name || '');
+    return an.localeCompare(bn, 'sv', { sensitivity:'base' });
+  });
+
+  return filtered;
+}
+
+/** CSV exporter: BOM-prefixed UTF-8, quoted cells, simple header. */
+function exportFilteredToCSV() {
+  var filtered = getFilteredSortedFeatures();
+  if (!filtered.length) { alert("No data to export."); return; }
+  var header = ["name","category","website","delete","comments","city","lat","lon"];
+  var rows = [header];
+
+  filtered.forEach(function(f){
+    var p = f.properties || {};
+    var c = (f.geometry && f.geometry.coordinates) ? f.geometry.coordinates : [null,null];
+    rows.push([ p.name||"", p.category||"", p.website||"", "", p.comments||"", p.city||"", c[1], c[0] ]);
+  });
+
+  var csv = "\uFEFF" + rows.map(function(r){
+    return r.map(function(v){ return '"' + String(v).replace(/"/g,'""') + '"'; }).join(",");
+  }).join("\n");
+
+  var blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+  var city = (document.getElementById('citySelector').value || 'all').toLowerCase();
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'startup-' + city + '.csv';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+/**
+ * XLSX exporter using SheetJS (loaded on demand).
+ * Columns auto-sized roughly by content length for readability.
+ */
+async function exportFilteredToXLSX() {
+  try { await ensureSheetJS(); } catch(e) { console.error(e); alert('Could not load Excel library (SheetJS).'); return; }
+
+  var filtered = getFilteredSortedFeatures();
+  if (!filtered.length) { alert("No data to export."); return; }
+
+  var header = ["name","category","website","city","lat","lon"];
+  var data = [header];
+
+  filtered.forEach(function(f){
+    var p = f.properties || {};
+    var c = (f.geometry && f.geometry.coordinates) ? f.geometry.coordinates : [null,null];
+    data.push([ p.name||"", p.category||"", p.website||"", p.city||"", c[1], c[0] ]);
+  });
+
+  var ws = XLSX.utils.aoa_to_sheet(data);
+  // Naive auto-width: longest string length per column (+1), capped at 60 chars.
+  ws['!cols'] = header.map(function(_, i){
+    var maxLen = 0;
+    data.forEach(function(row){
+      var val = String(row[i] == null ? "" : row[i]);
+      if (val.length > maxLen) maxLen = val.length;
+    });
+    return { wch: Math.min(maxLen + 1, 60) };
+  });
+
+  var wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, "export");
+
+  var city = (document.getElementById('citySelector').value || 'all').toLowerCase();
+  XLSX.writeFile(wb, 'startup-' + city + '.xlsx');
+}
+
+/* ============================
+   App init (async)
+   ============================ */
+
+/**
+ * Boot sequence:
+ *  1) Discover and render the latest boundary per city (from /geojson/boundaries/).
+ *  2) Find the latest clean points file (from /geojson/).
+ *  3) Build UI (categories + city selector) from the data.
+ */
+(async function init(){
+  showLoading(true);
+  try {
+    // 1) Discover boundaries and draw them as background context layers.
+    const boundaryMap = await discoverBoundaries();
+    const entries = Object.entries(boundaryMap);
+    await Promise.all(entries.map(async function([city, url]){
+      try {
+        const gj = await fetchJSON(url);
+        renderCityBoundary(city, gj);
+      } catch(e){ console.error('Boundary load error for', city, url, e); }
+    }));
+
+    // 2) Pick the latest clean points export (timestamp in filename).
+    const dataUrl = await discoverLatestCleanGeoJSON();
+    if (!dataUrl) throw new Error('No clean_cultural_places_*.geojson found in ./geojson/');
+
+    // 3) Load and render.
+    const d = await fetchJSON(dataUrl);
+    allData = d;
+    setupUI(d);
+  } catch (err) {
+    console.error("Init error:", err);
+    alert('Failed to load data. Make sure you are running "python3 -m http.server" from the project root, and that ./geojson contains outputs.');
+  } finally {
+    showLoading(false);
+  }
+})();
+
+/* ============================
+   Button bindings
+   ============================ */
+
+document.getElementById('togglePanelBtn').addEventListener('click', function(){
+  var panel = document.getElementById('panel');
+  panel.style.display = (panel.style.display === 'none' || !panel.style.display) ? 'block' : 'none';
+});
+
+document.getElementById('legendToggle').addEventListener('click', function(){
+  var legend = document.getElementById('legend');
+  legend.style.display = (legend.style.display === 'none' || !legend.style.display) ? 'block' : 'none';
+});
+
+document.getElementById('exportCsvBtn').addEventListener('click', exportFilteredToCSV);
+document.getElementById('exportXlsxBtn').addEventListener('click', exportFilteredToXLSX);
+
+/**
+ * Screenshot capture:
+ *  - Lazily loads html2canvas.
+ *  - Temporarily adjusts Leaflet corners for nicer composition.
+ *  - Hides our UI panel/controls so the image focuses on the map.
+ *  - Exports a high-DPI PNG (scale ≥ 2).
+ * Kept hidden by default; unhide #screenshotBtn to enable in the UI.
+ */
+document.getElementById('screenshotBtn').addEventListener('click', async function(){
+  try {
+    await ensureHtml2Canvas();
+    const mapEl   = document.getElementById('map');
+    const panelEl = document.getElementById('panel');
+    const ctrEl   = document.getElementById('controlsTopRight');
+
+    // Temporary CSS overrides so bottom-left/right controls stack nicely in the PNG.
+    const style = document.createElement('style');
+    style.id = 'capture-fixes';
+    style.textContent = `
+      #map .leaflet-bottom.leaflet-right,
+      #map .leaflet-bottom.leaflet-left { display: block !important; margin: 0 !important; }
+      #map .leaflet-control { margin: 0 10px 10px 0 !important; }
+      #map .leaflet-bottom.leaflet-left .leaflet-control { margin: 0 0 10px 10px !important; }
+      #map .leaflet-control-attribution,
+      #map .startup-logo { display: inline-block !important; vertical-align: bottom !important; }
+    `;
+    document.head.appendChild(style);
+
+    // Hide our panel & top-right controls to avoid overlapping in the capture.
+    const prevPanelDisplay = panelEl.style.display || '';
+    const prevCtrDisplay   = ctrEl.style.display   || '';
+    panelEl.style.display = 'none';
+    ctrEl.style.display   = 'none';
+
+    // Ensure we capture from the top-left of the page.
+    window.scrollTo(0, 0);
+    await new Promise(r => requestAnimationFrame(() => r()));
+
+    // Render the map to canvas. scale>=2 improves text sharpness on HiDPI displays.
+    const canvas = await html2canvas(mapEl, {
+      useCORS: true,
+      backgroundColor: null,
+      scale: Math.max(2, window.devicePixelRatio || 1),
+      scrollX: 0, scrollY: -window.scrollY
+    });
+
+    // Restore UI and remove temporary style.
+    panelEl.style.display = prevPanelDisplay;
+    ctrEl.style.display   = prevCtrDisplay;
+    style.remove();
+
+    // Trigger PNG download.
+    const a = document.createElement('a');
+    a.download = 'startup-map.png';
+    a.href = canvas.toDataURL('image/png');
+    a.click();
+  } catch (e) {
+    console.error(e);
+    alert('Error taking screenshot: ' + (e.message || e));
+  }
+});
+</script>
+</body>
+</html>
