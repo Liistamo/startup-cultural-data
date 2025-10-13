@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "STARTUP cultural places dataset and processing pipeline"
+abstract: >
+  Python pipelines and reproducible workflows to build an EU-wide cultural
+  places dataset from official boundaries (Eurostat GISCO, Etalab) and
+  Overture Maps, with Leaflet-based visualization.
+authors:
+  - family-names: Liistamo
+    given-names: Magnus
+    email: magnus.liistamo@humangeo.su.se
+    affiliation: "Stockholm University, Department of Human Geography"
+license: Apache-2.0
+repository-code: "https://github.com/Liistamo/cultural_data"
+type: software
+version: "0.1.0"
+keywords:
+  - cultural geography
+  - GIS
+  - GeoJSON
+  - Leaflet
+  - Overture Maps
+  - Eurostat
+  - LAU
+  - EPCI
+  - DuckDB
+date-released: "2025-10-13"
+
+preferred-citation:
+  type: dataset
+  title: "STARTUP cultural places dataset (EU cities) — reproducible build"
+  authors:
+    - family-names: Liistamo
+      given-names: Magnus
+      affiliation: "Stockholm University, Department of Human Geography"
+  year: 2025
+  version: "0.1.0"
+  url: "https://github.com/Liistamo/cultural_data/releases/latest"
+  notes: >
+    Funded by the European Union – Horizon Europe research and innovation
+    programme under Grant Agreement No 101178523.
+
+references:
+  - type: software
+    title: "STARTUP cultural-data processing pipeline (code)"
+    authors:
+      - family-names: Liistamo
+        given-names: Magnus
+        affiliation: "Stockholm University, Department of Human Geography"
+    year: 2025
+    version: "0.1.0"
+    url: "https://github.com/Liistamo/cultural_data"

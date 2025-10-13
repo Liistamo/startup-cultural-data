@@ -1,0 +1,37 @@
+NOTICE
+
+Project: STARTUP — Sustainable transitions: action research and training in urban perspective (Horizon Europe)
+Repository: startup-cultural-data
+
+Copyright 2025 STARTUP Consortium
+Copyright 2025 Stockholms universitet
+Copyright 2025 Magnus Liistamo
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+This project has received funding from the European Union’s Horizon Europe
+research and innovation programme under Grant Agreement No 101178523.
+
+Attributions / Third-Party Notices
+----------------------------------
+This repository may include or depend on third-party open-source software.
+Where applicable, each component is licensed by its respective copyright holders
+under their own licenses. See the corresponding license files, headers, or
+package metadata for details.
+
+Data Sources
+------------
+- Eurostat — GISCO LAU 2024
+- Etalab — EPCI (Eurométropole de Strasbourg)
+- Overture Maps Foundation — Places (Parquet)
+- OpenStreetMap contributors — Basemap tiles

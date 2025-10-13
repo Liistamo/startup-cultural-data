@@ -1,0 +1,7 @@
+EU ACKNOWLEDGEMENT
+===================
+
+This project has received funding from the EU Horizon Europe research and innovation programme under Grant Agreement No 101178523.
+
+Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the granting authority.
+Neither the European Union nor the granting authority can be held responsible for them.

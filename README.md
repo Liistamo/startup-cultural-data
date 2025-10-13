@@ -17,6 +17,16 @@ This project builds a map of art and cultural places in European cities for:
 
 ---
 
+## Docs & legal (quick links)
+- **DATA-SOURCES-AND-METHODS.txt** – sources, methods & full references (EU report appendix)
+- **LICENSE** – project license (Apache-2.0)
+- **NOTICE** – attribution notice (third-party notices + required attributions)
+- **FUNDING_EU.txt** – EU funding acknowledgement (Horizon Europe, GA No 101178523)
+- **DATA_LICENSE.txt** – license terms for generated datasets (CC BY 4.0)
+- **geojson/lau/README.txt** – notes about cached official source layers (LAU/EPCI)
+
+---
+
 **TL;DR (Too Long; Didn’t Read)**  
 1) Create venv & install deps:
 ```bash
@@ -290,8 +300,33 @@ cultural_data/
 
 ---
 
-## Manual sync to WordPress theme
-To copy the generated outputs into the WordPress theme (**startup-wp-theme**), see the separate guide: **MANUAL_SYNC.md**.
+## Licensing
+This repository is licensed under **Apache License, Version 2.0** (see `LICENSE`).
+- You are free to use, modify, and redistribute, including commercially.
+- Patent grant and explicit contribution terms help long-term reuse.
+- See `NOTICE` for required third-party attributions and notices.
+
+> Note on input data: Official boundary caches (Eurostat/Etalab) and Overture data are governed by their respective licences/terms. See `DATA-SOURCES-AND-METHODS.txt` and `geojson/lau/README.txt` for details and source links.
+
+## Attribution & citation
+If you use this work, please cite:
+
+> **STARTUP Consortium (Stockholm University), 2025.**  
+> *startup-cultural-data: Art & Cultural Places — LAU/EPCI + Overture Maps → Leaflet Map.*  
+> Repository: https://github.com/Liistamo/cultural_data  
+> Contact: magnus.liistamo@humangeo.su.se
+
+Also acknowledge third-party data/software per `NOTICE` and `DATA-SOURCES-AND-METHODS.txt`.
+
+## EU funding acknowledgement
+This project has received funding from the **European Union’s Horizon Europe** research and innovation programme under **Grant Agreement No 101178523**.
+Coordinator: **Sapienza University of Rome**.  
+Beneficiary: **STARTUP Consortium**.
+
+## Documentation index
+- **DATA-SOURCES-AND-METHODS.txt** – detailed sources, methods, and references (Eurostat GISCO, Etalab/EPCI, Overture Maps, DuckDB, Leaflet, OSM, SheetJS, html2canvas).  
+- **geojson/lau/README.txt** – cache policy (what’s stored, size limits, how to refresh) + links to the upstream sources.  
+- **MANUAL_SYNC.md** – how to copy generated files into the WordPress theme.  
 
 ---
 
