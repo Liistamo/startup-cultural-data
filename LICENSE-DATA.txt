@@ -36,7 +36,8 @@ Recommended citation
 “STARTUP cultural places dataset for selected European cities.” Version: YYYY-MM-DD.  
 Available at: https://github.com/Liistamo/startup-cultural-data
 
-Inline attribution example: “© STARTUP project (CC BY 4.0).”
+Inline attribution example:
+“Magnus Liistamo / STARTUP, 2025 (CC BY 4.0).”
 
 Contact
 -------

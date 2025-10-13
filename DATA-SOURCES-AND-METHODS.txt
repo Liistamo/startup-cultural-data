@@ -1,5 +1,5 @@
-STARTUP – Sources, Methods and Web Map (with references)
-============================================================
+startup-cultural-data – Sources, Methods and Web Map (with references)
+=====================================================================
 
 Collection of official data on administrative boundaries in Europe
 ------------------------------------------------------------------
@@ -39,9 +39,14 @@ All processing scripts, category selections, and boundary construction rules are
 
 Funding and acknowledgements
 ----------------------------
-This project has received funding from the European Union’s Horizon Europe research and innovation programme under Grant Agreement No 101178523.
+This project has received funding from the European Union’s Horizon Europe
+research and innovation programme under Grant Agreement No 101178523.
 
-© 2024–2025 STARTUP Consortium. Maintained by Stockholm University, Department of Human Geography; Author: Magnus Liistamo.
+Maintained by Magnus Liistamo / STARTUP, 2025  
+Department of Human Geography, Stockholm University.  
+Data licensed under CC BY 4.0.  
+Code licensed separately under Apache 2.0 (see LICENSE).
+
 
 References
 ----------
@@ -88,8 +93,14 @@ References
 
 Attribution and licensing notes
 -------------------------------
-• Eurostat / GISCO LAU: public data; see Eurostat re-use policy.
-• Etalab EPCI: French open data; see data.gouv.fr licensing (Etalab Open License v2.0 or ODbL depending on dataset).
-• Overture Maps: data provided under the Overture Data Terms (see project site).
-• OpenStreetMap tiles: abide by OSMF tile usage policy; for production, consider self-hosting or a commercial provider.
+• Dataset by Magnus Liistamo / STARTUP, 2025. Licensed under CC BY 4.0.  
+  https://creativecommons.org/licenses/by/4.0/  
+
+• Code and processing scripts licensed separately under Apache 2.0.  
+  See LICENSE and LICENSE-DATA.txt for details.  
+
+• Eurostat / GISCO LAU: public data; see Eurostat re-use policy.  
+• Etalab EPCI: French open data; see data.gouv.fr licensing (Etalab Open License v2.0 or ODbL depending on dataset).  
+• Overture Maps: data provided under the Overture Data Terms (see project site).  
+• OpenStreetMap tiles: follow OSMF tile usage policy; for production, consider self-hosting or a commercial provider.  
 • Leaflet, SheetJS, html2canvas, DuckDB: see respective open-source licenses.

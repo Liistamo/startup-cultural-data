@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this project, please cite it as below."
-title: "STARTUP cultural places dataset and processing pipeline"
+title: "startup-cultural-data: Art & Cultural Places — LAU/EPCI + Overture Maps → Leaflet Map"
 abstract: >
   Python pipelines and reproducible workflows to build an EU-wide cultural
   places dataset from official boundaries (Eurostat GISCO, Etalab) and
@@ -28,7 +28,7 @@ date-released: "2025-10-13"
 
 preferred-citation:
   type: dataset
-  title: "STARTUP cultural places dataset (EU cities) — reproducible build"
+  title: "startup-cultural-data: Art & Cultural Places — LAU/EPCI + Overture Maps → Leaflet Map"
   authors:
     - family-names: Liistamo
       given-names: Magnus
@@ -36,7 +36,9 @@ preferred-citation:
   year: 2025
   version: "0.1.0"
   url: "https://github.com/Liistamo/cultural_data/releases/latest"
+  license: "CC-BY-4.0"
   notes: >
+    Please cite as: Magnus Liistamo / STARTUP, 2025 (CC BY 4.0).  
     Funded by the European Union – Horizon Europe research and innovation
     programme under Grant Agreement No 101178523.
 
@@ -50,3 +52,4 @@ references:
     year: 2025
     version: "0.1.0"
     url: "https://github.com/Liistamo/cultural_data"
+    license: "Apache-2.0"

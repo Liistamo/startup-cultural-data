@@ -311,17 +311,17 @@ This repository is licensed under **Apache License, Version 2.0** (see `LICENSE`
 ## Attribution & citation
 If you use this work, please cite:
 
-> **STARTUP Consortium (Stockholm University), 2025.**  
-> *startup-cultural-data: Art & Cultural Places — LAU/EPCI + Overture Maps → Leaflet Map.*  
-> Repository: https://github.com/Liistamo/cultural_data  
-> Contact: magnus.liistamo@humangeo.su.se
+> **STARTUP. (2025).**  
+> *startup-cultural-data: Art & Cultural Places — LAU/EPCI + Overture Maps → Leaflet Map* [Data set].  
+> *In Sustainable Transitions. Action Research and Training in Urban Perspective (STARTUP).*  
+> [https://github.com/Liistamo/cultural_data](https://github.com/Liistamo/cultural_data)
+
+**Contact:** magnus.liistamo@humangeo.su.se
 
 Also acknowledge third-party data/software per `NOTICE` and `DATA-SOURCES-AND-METHODS.txt`.
 
 ## EU funding acknowledgement
-This project has received funding from the **European Union’s Horizon Europe** research and innovation programme under **Grant Agreement No 101178523**.
-Coordinator: **Sapienza University of Rome**.  
-Beneficiary: **STARTUP Consortium**.
+This project has received funding from the **European Union’s Horizon Europe** research and innovation programme under **Grant Agreement No 101178523**.  
 
 ## Documentation index
 - **DATA-SOURCES-AND-METHODS.txt** – detailed sources, methods, and references (Eurostat GISCO, Etalab/EPCI, Overture Maps, DuckDB, Leaflet, OSM, SheetJS, html2canvas).  
