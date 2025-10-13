@@ -346,13 +346,67 @@ WHITELIST = {
     'screen_printing_t_shirt_printing','orchard'
 }
 
+# Termer som egentligen motsvarar whitelist, men kommer in med stavning/format-varianter.
+# Nycklarna ska vara i snake_case och lower (dvs körda genom to_snake).
+NORMALIZATION_OVERRIDES = {
+    # --- Stavnings- och formatvarianter som redan finns i whitelist ---
+    "theaters_and_performance_venue": "theaters_and_performance_venues",
+    "community_centre": "community_center",
+    "community centre": "community_center",
+    "architecture_school": "architecture_schools",
+    "art_and_entertainment": "arts_and_entertainment",
+    "film_festivals_and_organisations": "film_festivals_and_organizations",
+    "blacksmith": "blacksmiths",
+    "photographers": "photographer",
+    "community_garden": "community_gardens",
+    "books_store": "bookstore",
+    "theater_and_performance_venues": "theaters_and_performance_venues",
+    "music_festival_and_organizations": "music_festivals_and_organizations",
+    "music_festival_and_organisations": "music_festivals_and_organizations",
+    # --- Följande finns inte i whitelist men föreslås mappas enligt nedan ---
+    "community_service": "community_services_non_profits",
+    "culture_organization": "cultural_center",
+    "culture_organisation": "cultural_center",
+    "musical_band_orchestras": "musical_band_orchestras_and_symphonies",
+    "cultural_space": "cultural_center",
+    "community_center_music_venue_bookshop": "cultural_center",
+    "handcrafts_festival": "arts_and_crafts",
+    "handcrafts_fashion": "arts_and_crafts",
+    "handcrafts": "arts_and_crafts",
+    # Stockholm har markerat studio 44 enligt nedan men kan mappas till community_center
+    "community_center_music_venue_bookshop": "community_center",
+    # --- Följande finns inte i whitelist men föreslås mappas enligt nedan eller så får de vara kvar med Startup [term] ---
+    # "creative_space_coworking": "cultural_center",
+    # "folklore": "cultural_center",
+    # "media_school": "media_agency",
+    "pub_art_gellery_perfomances": "cultural_center",
+    # "auction_house": "cultural_center",
+    # "archive": "museum",
+    "design_school": "art_school",
+}
+
+
 def normalize_category(raw_cat: str | None) -> str:
+    """
+    Normalize incoming category strings:
+    - Handles common spelling and formatting variants
+    - Returns whitelist value if recognized
+    - Otherwise prefixes with "Startup " to signal a non-whitelisted category
+    """
     original = (raw_cat or "").strip()
     if not original:
         return "Startup"
     snake = to_snake(original)
+
+    # 1) Kända stavnings-/formatvarianter mappas direkt
+    if snake in NORMALIZATION_OVERRIDES:
+        return NORMALIZATION_OVERRIDES[snake]
+
+    # 2) Exakt whitelist-träff
     if snake in WHITELIST:
         return snake
+
+    # 3) Annars flaggas som Startup + original (oförändrat, bra för manuell uppföljning)
     return f"Startup {original}"
 
 # -------------------------
