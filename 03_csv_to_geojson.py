@@ -550,6 +550,10 @@ def main():
     # Load all boundary polygons (if any). If none exist: export without spatial filtering.
     boundary_polygons = _load_boundary_polygons()
     use_boundary = len(boundary_polygons) > 0
+
+    # 🔧 TEMP: disable boundary filtering (export all points regardless of location)
+    use_boundary = False
+
     if use_boundary:
         print(f"🧭 Boundary filter active ({len(boundary_polygons)} polygons found in {BOUNDARY_DIR}/)")
     else:
