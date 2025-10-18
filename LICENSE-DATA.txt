@@ -2,6 +2,7 @@ DATA LICENSE (for generated datasets in this repository)
 =======================================================
 
 SPDX-License-Identifier: CC-BY-4.0
+Copyright (c) 2024–2025 Magnus Liistamo
 
 Scope
 -----
