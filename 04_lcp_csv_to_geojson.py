@@ -27,6 +27,10 @@ OUTPUT_DIR  = Path("lcp_all")
 BOUNDARY_DIR = Path("geojson") / "boundaries"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+# --- Settings ---
+USE_BOUNDARY = False      # True = använd boundary-filter, False = ignorera geografiska gränser
+USE_LAT_LON  = False      # True = kräv lat/lon, False = inkludera även poster utan koordinater
+
 # --- Startbanner ---
 print(f"🚀 Läser alla CSV-filer från: {INPUT_DIR.resolve()} (rekursivt)")
 
@@ -368,12 +372,16 @@ def main():
     if not INPUT_DIR.exists():
         print(f"❌ {INPUT_DIR} saknas", file=sys.stderr); sys.exit(1)
 
+    # Ladda ev. boundary-geometrier
     boundary_polygons = _load_boundary_polygons()
-    use_boundary = len(boundary_polygons) > 0
+    use_boundary = USE_BOUNDARY and len(boundary_polygons) > 0
     if use_boundary:
         print(f"🧭 Boundary filter aktivt ({len(boundary_polygons)} polygon(er) i {BOUNDARY_DIR}/)")
     else:
-        print("ℹ️  Inga boundary-filer hittades; export utan geografiskt filter.")
+        if USE_BOUNDARY:
+            print("ℹ️  Inga boundary-filer hittades; export utan geografiskt filter.")
+        else:
+            print("ℹ️  Boundary-filtret är avstängt via setting (USE_BOUNDARY=False).")
 
     # Hämta ALLA CSV rekursivt
     csv_paths = sorted(INPUT_DIR.rglob("*.csv"))
@@ -409,14 +417,16 @@ def main():
                 continue
 
             # 2) Drop delete == 2 (behåll regel)
-            delv = (rec.get("delete") or "").strip()
-            if delv == "2" or delv == 2:
+            delv = rec.get("delete")
+            if str(delv).strip() == "2":
                 skip_del += 1
                 continue
 
-            # 3) Koordinater
+            # 3) Koordinater (styrt av USE_LAT_LON)
             lat, lon, reason = try_extract_lat_lon(rec)
-            if lat is None or lon is None:
+            has_coords = (lat is not None and lon is not None)
+            if not has_coords and USE_LAT_LON:
+                # Skippa om coords krävs men saknas
                 skip_coord += 1
                 skipped_rows.append({
                     "source_file": str(p.relative_to(INPUT_DIR)),
@@ -432,10 +442,13 @@ def main():
                     "reason": reason or "missing coordinates",
                 })
                 continue
+            # Om USE_LAT_LON=False tillåter vi poster utan koordinater
+            if not has_coords:
+                lat, lon = None, None
 
-            # 4) Boundary-filter + whitelist
+            # 4) Boundary-filter + whitelist (bara om vi faktiskt har koordinater)
             name = (rec.get("name") or "").strip()
-            if use_boundary and not is_name_whitelisted(name) and not point_inside_any_boundary(lon, lat, boundary_polygons):
+            if has_coords and use_boundary and not is_name_whitelisted(name) and not point_inside_any_boundary(lon, lat, boundary_polygons):
                 skip_coord += 1
                 skipped_rows.append({
                     "source_file": str(p.relative_to(INPUT_DIR)),
@@ -468,10 +481,12 @@ def main():
                 props["website"] = website
             if comments:
                 props["comments"] = comments
+            if lat is None or lon is None:
+                props["note"] = "saknar koordinater"
 
             features.append({
                 "type": "Feature",
-                "geometry": {"type": "Point", "coordinates": [lon, lat]},
+                "geometry": {"type": "Point", "coordinates": [lon, lat]} if (lat is not None and lon is not None) else None,
                 "properties": props,
             })
             kept += 1
