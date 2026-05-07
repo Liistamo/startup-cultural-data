@@ -47,8 +47,26 @@ duckdb.so
 *.pem
 *.crt
 
-# NOTE: cleaned_data/ and geojson/ are tracked in Git (no ignore needed)
+# NOTE: cleaned_data/ and geojson/boundaries/ are tracked in Git
 
 # Cache from official sources (too large for GitHub)
 geojson/lau/*.geojson
 !geojson/lau/README.txt
+
+# --- Geocode caches and generated output ---
+geocode/.geocode_cache.json
+geocode/.geocode_cache_fresh.json
+geocode/platser.csv
+geocode/platser_geocoded_*.csv
+
+# --- Editor / workspace ---
+*.code-workspace
+
+# --- Working data and temp ---
+addresses.csv
+geocode_cache.json
+lcp_all/
+lcp_data/
+lcp_final/
+temo/
+.claude/
